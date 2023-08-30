@@ -1,0 +1,5 @@
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Persistence\obj\Release\net7.0\Tracker.Persistence.csproj.AssemblyReference.cache
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Persistence\obj\Release\net7.0\Tracker.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Persistence\obj\Release\net7.0\Tracker.Persistence.AssemblyInfoInputs.cache
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Persistence\obj\Release\net7.0\Tracker.Persistence.AssemblyInfo.cs
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Persistence\obj\Release\net7.0\Tracker.Persistence.csproj.CoreCompileInputs.cache

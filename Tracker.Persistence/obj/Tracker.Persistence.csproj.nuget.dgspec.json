@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj",
+        "projectName": "Tracker.Entity",
+        "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj",
+        "packagesPath": "C:\\Users\\'Seyi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\'Seyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj",
+        "projectName": "Tracker.Persistence",
+        "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj",
+        "packagesPath": "C:\\Users\\'Seyi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\'Seyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj": {
+                "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

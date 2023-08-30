@@ -1,0 +1,11 @@
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Release\net7.0\Tracker.Entity.deps.json
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Release\net7.0\Tracker.Entity.dll
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Release\net7.0\Tracker.Entity.pdb
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Release\net7.0\Tracker.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Release\net7.0\Tracker.Entity.AssemblyInfoInputs.cache
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Release\net7.0\Tracker.Entity.AssemblyInfo.cs
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Release\net7.0\Tracker.Entity.csproj.CoreCompileInputs.cache
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Release\net7.0\Tracker.Entity.dll
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Release\net7.0\refint\Tracker.Entity.dll
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Release\net7.0\Tracker.Entity.pdb
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Release\net7.0\ref\Tracker.Entity.dll

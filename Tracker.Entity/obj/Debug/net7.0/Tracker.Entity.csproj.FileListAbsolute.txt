@@ -1,0 +1,67 @@
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.deps.json
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.dll
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.pdb
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.csproj.AssemblyReference.cache
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfoInputs.cache
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfo.cs
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.dll
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\refint\Tracker.Entity.dll
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.pdb
+C:\Users\Seyi\Desktop\ENTERPRISE DATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\ref\Tracker.Entity.dll
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.deps.json
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.dll
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.pdb
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfoInputs.cache
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfo.cs
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.csproj.CoreCompileInputs.cache
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.dll
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\refint\Tracker.Entity.dll
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.pdb
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\ref\Tracker.Entity.dll
+D:\LAPTOP\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.deps.json
+D:\LAPTOP\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.dll
+D:\LAPTOP\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.pdb
+D:\LAPTOP\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\LAPTOP\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfoInputs.cache
+D:\LAPTOP\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfo.cs
+D:\LAPTOP\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.csproj.CoreCompileInputs.cache
+D:\LAPTOP\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.dll
+D:\LAPTOP\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\refint\Tracker.Entity.dll
+D:\LAPTOP\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.pdb
+D:\LAPTOP\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\ref\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.deps.json
+C:\Users\'Seyi\Desktop\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.pdb
+C:\Users\'Seyi\Desktop\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\'Seyi\Desktop\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfoInputs.cache
+C:\Users\'Seyi\Desktop\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfo.cs
+C:\Users\'Seyi\Desktop\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.csproj.CoreCompileInputs.cache
+C:\Users\'Seyi\Desktop\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\refint\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.pdb
+C:\Users\'Seyi\Desktop\ENTERPRISEDATA\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\ref\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\LocalGitRepo\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.deps.json
+C:\Users\'Seyi\Desktop\LocalGitRepo\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\LocalGitRepo\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.pdb
+C:\Users\'Seyi\Desktop\LocalGitRepo\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\'Seyi\Desktop\LocalGitRepo\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfoInputs.cache
+C:\Users\'Seyi\Desktop\LocalGitRepo\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfo.cs
+C:\Users\'Seyi\Desktop\LocalGitRepo\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.csproj.CoreCompileInputs.cache
+C:\Users\'Seyi\Desktop\LocalGitRepo\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\LocalGitRepo\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\refint\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\LocalGitRepo\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.pdb
+C:\Users\'Seyi\Desktop\LocalGitRepo\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\ref\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\Repository\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.deps.json
+C:\Users\'Seyi\Desktop\Repository\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\Repository\IssueTrackingSystem\Tracker.Entity\bin\Debug\net7.0\Tracker.Entity.pdb
+C:\Users\'Seyi\Desktop\Repository\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\'Seyi\Desktop\Repository\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfoInputs.cache
+C:\Users\'Seyi\Desktop\Repository\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.AssemblyInfo.cs
+C:\Users\'Seyi\Desktop\Repository\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.csproj.CoreCompileInputs.cache
+C:\Users\'Seyi\Desktop\Repository\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\Repository\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\refint\Tracker.Entity.dll
+C:\Users\'Seyi\Desktop\Repository\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\Tracker.Entity.pdb
+C:\Users\'Seyi\Desktop\Repository\IssueTrackingSystem\Tracker.Entity\obj\Debug\net7.0\ref\Tracker.Entity.dll

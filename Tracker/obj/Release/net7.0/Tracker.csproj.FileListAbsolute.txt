@@ -1,0 +1,8 @@
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker\obj\Release\net7.0\Tracker.csproj.AssemblyReference.cache
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker\obj\Release\net7.0\Tracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker\obj\Release\net7.0\Tracker.AssemblyInfoInputs.cache
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker\obj\Release\net7.0\Tracker.AssemblyInfo.cs
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker\obj\Release\net7.0\Tracker.csproj.CoreCompileInputs.cache
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker\obj\Release\net7.0\Tracker.MvcApplicationPartsAssemblyInfo.cache
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker\obj\Release\net7.0\Tracker.RazorAssemblyInfo.cache
+C:\ENTERPRISEDATA\IssueTrackingSystem\Tracker\obj\Release\net7.0\Tracker.RazorAssemblyInfo.cs
