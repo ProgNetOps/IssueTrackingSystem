@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker\\Tracker.csproj": {}
+    "C:\\Repository\\IssueTrackingSystem\\Tracker\\Tracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj": {
+    "C:\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj",
+        "projectUniqueName": "C:\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj",
         "projectName": "Tracker.Entity",
-        "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj",
+        "projectPath": "C:\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj",
         "packagesPath": "C:\\Users\\'Seyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\obj\\",
+        "outputPath": "C:\\Repository\\IssueTrackingSystem\\Tracker.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\'Seyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj": {
+    "C:\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj",
+        "projectUniqueName": "C:\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj",
         "projectName": "Tracker.Persistence",
-        "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj",
+        "projectPath": "C:\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj",
         "packagesPath": "C:\\Users\\'Seyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\obj\\",
+        "outputPath": "C:\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\'Seyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj": {
-                "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj"
+              "C:\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj": {
+                "projectPath": "C:\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj"
               }
             }
           }
@@ -134,14 +134,14 @@
         }
       }
     },
-    "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Services\\Tracker.Services.csproj": {
+    "C:\\Repository\\IssueTrackingSystem\\Tracker.Services\\Tracker.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Services\\Tracker.Services.csproj",
+        "projectUniqueName": "C:\\Repository\\IssueTrackingSystem\\Tracker.Services\\Tracker.Services.csproj",
         "projectName": "Tracker.Services",
-        "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Services\\Tracker.Services.csproj",
+        "projectPath": "C:\\Repository\\IssueTrackingSystem\\Tracker.Services\\Tracker.Services.csproj",
         "packagesPath": "C:\\Users\\'Seyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Services\\obj\\",
+        "outputPath": "C:\\Repository\\IssueTrackingSystem\\Tracker.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\'Seyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -158,11 +158,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj": {
-                "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj"
+              "C:\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj": {
+                "projectPath": "C:\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj"
               },
-              "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj": {
-                "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj"
+              "C:\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj": {
+                "projectPath": "C:\\Repository\\IssueTrackingSystem\\Tracker.Persistence\\Tracker.Persistence.csproj"
               }
             }
           }
@@ -196,14 +196,14 @@
         }
       }
     },
-    "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker\\Tracker.csproj": {
+    "C:\\Repository\\IssueTrackingSystem\\Tracker\\Tracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker\\Tracker.csproj",
+        "projectUniqueName": "C:\\Repository\\IssueTrackingSystem\\Tracker\\Tracker.csproj",
         "projectName": "Tracker",
-        "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker\\Tracker.csproj",
+        "projectPath": "C:\\Repository\\IssueTrackingSystem\\Tracker\\Tracker.csproj",
         "packagesPath": "C:\\Users\\'Seyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker\\obj\\",
+        "outputPath": "C:\\Repository\\IssueTrackingSystem\\Tracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\'Seyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -220,11 +220,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj": {
-                "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj"
+              "C:\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj": {
+                "projectPath": "C:\\Repository\\IssueTrackingSystem\\Tracker.Entity\\Tracker.Entity.csproj"
               },
-              "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Services\\Tracker.Services.csproj": {
-                "projectPath": "C:\\Users\\'Seyi\\Desktop\\Repository\\IssueTrackingSystem\\Tracker.Services\\Tracker.Services.csproj"
+              "C:\\Repository\\IssueTrackingSystem\\Tracker.Services\\Tracker.Services.csproj": {
+                "projectPath": "C:\\Repository\\IssueTrackingSystem\\Tracker.Services\\Tracker.Services.csproj"
               }
             }
           }
