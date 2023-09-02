@@ -39,7 +39,7 @@ namespace Tracker.Persistence
         public DbSet<BTS> BaseStations { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Circuit> Circuits { get; set; }
-        //public DbSet<MPLSPoP> MPLSPoPs { get; set; }
+        public DbSet<MPLSPoP> MPLSPoPs { get; set; }
 
     }
 }
