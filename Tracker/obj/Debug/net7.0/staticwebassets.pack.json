@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\Tracker.bundle.scp.css"
     },
     {
-      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\CustomStyle.css",
+      "PackagePath": "staticwebassets\\css\\CustomStyle.css"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\ITSStyle.css",
+      "PackagePath": "staticwebassets\\css\\ITSStyle.css"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\glo_smaller.png",
+      "PackagePath": "staticwebassets\\glo_smaller.png"
     },
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\js\\site.js",
