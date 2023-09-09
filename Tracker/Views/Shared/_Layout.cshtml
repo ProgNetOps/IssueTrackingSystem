@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Tracker</title>
+    <title>@ViewData["Title"] | Tracker</title>
     @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     @* <link rel="stylesheet" href="~/Tracker.styles.css" asp-append-version="true" />  *@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
@@ -13,7 +13,10 @@
 <body>
     <header class="header" id="header">
         <nav class="nav">            
-                <a asp-controller="Home" asp-action="Index" class="nav__logo">LOGO</a>
+                <a asp-controller="Home" asp-action="Index" class="nav__logo" >
+                <span style="color:#ffe4e4;background-color:#333;border:5px 0 2px 2px; border-style: solid; border-color: #ffe4e4; border-radius:5px;">ish</span><span style="background-color:#ffe4e4;">Tracker</span>
+                </a>
+			
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -41,7 +44,7 @@
                                 <i class="uil uil-scenery nav__icon"></i> Login
                             </a>
                         </li>
-                        <li class="nav__item">
+                        <li class="nav__item" id="contact">
                             <a href="#contact" class="nav__link">
                                 <i class="uil uil-message nav__icon"></i> Contact Us
                             </a>
@@ -77,7 +80,7 @@
                     
             <div class="footer__copyright">                
                 <p >
-                      &copy; 2023 | All rights reserved.
+                    <span style="color:#ffe4e4;background-color:#333;border:5px 0 2px 2px; border-style: solid; border-color: #ffe4e4; border-radius:5px;">ish</span><span style="background-color:#ffe4e4;">Tracker</span> &copy; 2023 | All rights reserved.
                 </p>
             </div>
         </div>

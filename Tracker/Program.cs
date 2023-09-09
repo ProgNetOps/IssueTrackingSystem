@@ -1,15 +1,20 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Tracker.Persistence;
+using Tracker.Services.Implementations;
+using Tracker.Services.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add MVC services
 builder.Services.AddControllersWithViews();
 
 //Add DbContext Services 
 builder.Services.AddDbContextPool<AppDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+//Add BTS Service
+builder.Services.AddScoped<IBaseStationService, BaseStationService>();
 
 var app = builder.Build();
 

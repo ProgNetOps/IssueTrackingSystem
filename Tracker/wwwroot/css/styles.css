@@ -17,7 +17,6 @@
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
-    /*--body-color: #ffe4e4;*/
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -90,6 +89,7 @@ ul {
 
 a {
     text-decoration: none;
+    color:inherit;
 }
 
 
@@ -109,7 +109,7 @@ header {
 
 .nav {
     max-width: 90%;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,10 +124,30 @@ header {
 }
 
 .nav__list {
-    display: flex;
+    color: #28b485; display: flex;
     flex-flow: row nowrap;
     gap: 3rem;
 }
+
+
+.nav__item {
+    border: 0.1rem solid var(--body-color);
+    border-radius: 0.3rem;
+    transition: all 0.3s ease-in 0.1s;
+    padding: .1rem .2rem;
+}
+
+
+.nav__item:hover {
+    box-shadow: 0.2rem 0.2rem .4rem 0.2rem #333;
+    transform: scale(1.2, 1.3);
+    border: 0.1rem solid #333;
+}
+
+    .nav__item#contact {
+        border: 0.1rem solid var(--colourGreyLight);
+        box-shadow: 0.2rem 0.2rem .4rem 0.2rem #333;
+    }
 
 .nav__menu {
     margin-left: auto;
@@ -141,6 +161,8 @@ header {
 main{
     margin:auto;
 }
+
+
 
 /*==================== FOOTER ====================*/
 
@@ -205,7 +227,7 @@ main{
 
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 790px) {
 
     :root {
         --big-font-size: 2rem;
@@ -222,7 +244,9 @@ main{
         bottom: 0;
         left: 0;
         z-index: var(--z-fixed);
-        background-color: var(--body-color);
+        background-color: var(--body-color);        
+        border-radius: 1rem 1rem 0 0;
+        
     }
 
     .nav__icon,
@@ -266,10 +290,12 @@ main{
 
     .nav-link:hover {
         color: var(--first-color);
+
     }
 
+
     .nav__icon {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .nav__close {
@@ -280,14 +306,19 @@ main{
         cursor: pointer;
         color: var(--first-color);
     }
-      
-    
+          
     .show-menu {
         bottom: 0;
     }
 
     
-    .nav__logo,
+    .nav__logo img {
+        display: inline-block;
+        width: 100%;
+        height:auto;
+    }
+
+
     .nav__toggle {
         color: var(--title-color);
         font-weight: var(--font-medium);
