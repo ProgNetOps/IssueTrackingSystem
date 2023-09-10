@@ -19,14 +19,15 @@ namespace Tracker.Services.Base
             this.context = context;
         }
 
+        public async virtual Task<IEnumerable<T>?> GetAllAsync()
+        {
+            return await context.Set<T>().ToListAsync();
+        }
+
         public async Task AddAsync(T entity)
         {
             await context.Set<T>().AddAsync(entity);
             await context.SaveChangesAsync();
-        }
-        public async Task<IEnumerable<T?>> GetAllAsync()
-        {
-            return await context.Set<T>().ToListAsync();
         }
 
         public Task<T?> GetByIdAsync(int id)

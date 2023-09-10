@@ -11,10 +11,13 @@ namespace Tracker.Controllers
         {
             this.service = service;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var allSites = service.GetAllAsync();
-            return View();
+            ViewData["Title"] = "Base Stations";
+
+            var allBaseStations = await service.GetAllAsync();
+            return View(allBaseStations);
         }
+
     }
 }

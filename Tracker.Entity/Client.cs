@@ -4,13 +4,14 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tracker.Entity.Contract;
 
 namespace Tracker.Entity
 {
     /// <summary>
     /// Class that represents the client/customer
     /// </summary>
-    public class Client
+    public class Client:IEntityBase
     {  
 
         #region Properties

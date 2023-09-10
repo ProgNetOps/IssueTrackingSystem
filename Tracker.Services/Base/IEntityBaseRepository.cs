@@ -10,7 +10,7 @@ namespace Tracker.Services.Base
     public interface IEntityBaseRepository<T> where T : class, IEntityBase, new()
     {
         //All
-        Task<IEnumerable<T?>> GetAllAsync();
+        Task<IEnumerable<T>?> GetAllAsync();
 
         //Read
         Task<T?> GetByIdAsync(int id);

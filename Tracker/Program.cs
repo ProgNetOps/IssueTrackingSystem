@@ -16,6 +16,9 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 //Add BTS Service
 builder.Services.AddScoped<IBaseStationService, BaseStationService>();
 
+//Add ClientS Service
+builder.Services.AddScoped<IClientService, ClientService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
