@@ -441,3 +441,5 @@ C:\Repository\IssueTrackingSystem\Tracker\obj\Debug\net7.0\refint\Tracker.dll
 C:\Repository\IssueTrackingSystem\Tracker\obj\Debug\net7.0\Tracker.pdb
 C:\Repository\IssueTrackingSystem\Tracker\obj\Debug\net7.0\Tracker.genruntimeconfig.cache
 C:\Repository\IssueTrackingSystem\Tracker\obj\Debug\net7.0\ref\Tracker.dll
+C:\Repository\IssueTrackingSystem\Tracker\bin\Debug\net7.0\AutoMapper.dll
+C:\Repository\IssueTrackingSystem\Tracker\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

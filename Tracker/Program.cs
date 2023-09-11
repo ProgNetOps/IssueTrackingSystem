@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Tracker.Mappings;
 using Tracker.Persistence;
 using Tracker.Services.Implementations;
 using Tracker.Services.Services;
@@ -18,6 +19,9 @@ builder.Services.AddScoped<IBaseStationService, BaseStationService>();
 
 //Add ClientS Service
 builder.Services.AddScoped<IClientService, ClientService>();
+
+//Add AutoMapper
+builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 var app = builder.Build();
 

@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Tracker.Entity\Tracker.Entity.csproj" />
     <ProjectReference Include="..\Tracker.Persistence\Tracker.Persistence.csproj" />
   </ItemGroup>
