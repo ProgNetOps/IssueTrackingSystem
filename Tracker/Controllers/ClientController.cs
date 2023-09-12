@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Tracker.Entity;
+using Tracker.Models.DTOs;
 using Tracker.Services.Services;
 
 namespace Tracker.Controllers
@@ -6,16 +9,31 @@ namespace Tracker.Controllers
     public class ClientController : Controller
     {
         private readonly IClientService service;
+        private readonly IMapper mapper;
 
-        public ClientController(IClientService service)
+        public ClientController(IClientService service, IMapper mapper)
         {
             this.service = service;
+            this.mapper = mapper;
         }
+
         public async Task<IActionResult> Index()
         {
             ViewData["Title"] = "Clients";
-            var allClients = await service.GetAllAsync();
-            return View(allClients);
+
+            var Clients = await service.GetAllAsync();
+            var ClientsDTO = mapper.Map<IEnumerable<ClientDTO>>(Clients);
+            return View(ClientsDTO);
+        }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            ViewData["Title"] = "Client";
+
+            var Client = await service.GetByIdAsync(id);
+            var ClientDTO = mapper.Map<ClientDTO>(Client);
+            return View(ClientDTO);
+
         }
     }
 }

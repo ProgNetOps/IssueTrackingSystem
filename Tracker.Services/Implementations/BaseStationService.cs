@@ -26,5 +26,14 @@ namespace Tracker.Services.Implementations
                 Include(q => q.State).
                 ThenInclude(q => q.Region).ToListAsync();
         }
+
+        public async override Task<BTS?> GetByIdAsync(int id)
+        {
+            return await context.Set<BTS>().
+                Include(q => q.State).
+                ThenInclude(q => q.Region).           
+                FirstOrDefaultAsync(x => x.Id == id);
+        }
+
     }
 }

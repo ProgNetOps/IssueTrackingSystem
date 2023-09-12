@@ -16,8 +16,9 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #fff;
+    /*--body-color: hsl(var(--hue-color), 60%, 99%);*/
+    --body-color: rgb(248, 249, 250);
+    /*--container-color: #fff;*/
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     --colourBlack: #000;
@@ -160,8 +161,10 @@ header {
     margin-left: auto;
 }
 
-.container{
-    width: 100% !important;
+.content-container {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 300px;
 }
 
 main{
@@ -231,6 +234,26 @@ main{
     transform: scale(1.2);
 }
 
+.fixed-button {
+    position: fixed;
+    bottom: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    height: calc(4rem + 4vw);
+    width: calc(4rem + 4vw);
+    background-color: #f24;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    text-shadow: 5px 3px rgba(0, 0, 0, 0.8);
+    right: 5vw;
+    color: #fff;
+    font-size: calc(4rem + 5vw);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 750px) {
 
@@ -242,6 +265,11 @@ main{
         --normal-font-size: 0.938rem;
         --small-font-size: 0.813rem;
     }
+
+    .content-container {
+        width: 100%;
+    }
+
 
     header {
         width: 100%;
@@ -333,6 +361,8 @@ main{
     .nav__close:hover {
         color: indianred;
     }
+
+
 
 }
 

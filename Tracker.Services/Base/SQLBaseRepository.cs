@@ -24,15 +24,15 @@ namespace Tracker.Services.Base
             return await context.Set<T>().ToListAsync();
         }
 
+        public async virtual Task<T?> GetByIdAsync(int id)
+        {
+            return await context.Set<T>().FirstOrDefaultAsync(x => x.Id == id);
+        }
+
         public async Task AddAsync(T entity)
         {
             await context.Set<T>().AddAsync(entity);
             await context.SaveChangesAsync();
-        }
-
-        public Task<T?> GetByIdAsync(int id)
-        {
-            return context.Set<T>().FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task DeleteAsync(int id)

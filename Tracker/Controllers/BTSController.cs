@@ -16,6 +16,7 @@ namespace Tracker.Controllers
             this.service = service;
             this.mapper = mapper;
         }
+
         public async Task<IActionResult> Index()
         {
             ViewData["Title"] = "Base Stations";
@@ -25,5 +26,31 @@ namespace Tracker.Controllers
             return View(BaseStationsDTO);
         }
 
+        public async Task<IActionResult> Details(int id)
+        {
+            ViewData["Title"] = "BTS";
+
+            var BaseStation = await service.GetByIdAsync(id);
+            var BaseStationDTO = mapper.Map<BTSDTO>(BaseStation);
+
+            return View(BaseStationDTO);
+        }
+
+        public async Task<IActionResult> Create(BTSDTO model)
+        {
+            ViewData["Title"] = "New BTS";
+
+            if (model != null && ModelState.IsValid)
+            {
+                var bTS = mapper.Map<BTS>(model);
+                await service.AddAsync(bTS);
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View("NotFound");
+            }
+
+        }
     }
 }

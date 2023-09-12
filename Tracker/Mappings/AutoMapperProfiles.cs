@@ -9,6 +9,7 @@ namespace Tracker.Mappings
         public AutoMapperProfiles()
         {
             CreateMap<BTS,BTSDTO>().ReverseMap();
+            CreateMap<Client,ClientDTO>().ReverseMap();
         }
     }
 }
