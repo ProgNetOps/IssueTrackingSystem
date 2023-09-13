@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Tracker.Entity;
 
 namespace Tracker.Models.DTOs
 {
@@ -21,7 +22,7 @@ namespace Tracker.Models.DTOs
         [StringLength(100)]
         public string? ClientName { get; set; }
 
-        //public List<Circuit>? Circuits { get; set; }
+        public List<CircuitDTO>? Circuits { get; set; }
         #endregion
     }
 }

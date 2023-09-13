@@ -20,6 +20,9 @@ builder.Services.AddScoped<IBaseStationService, BaseStationService>();
 //Add ClientS Service
 builder.Services.AddScoped<IClientService, ClientService>();
 
+//Add ClientS Service
+builder.Services.AddScoped<ICircuitService, CircuitService>();
+
 //Add AutoMapper
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 

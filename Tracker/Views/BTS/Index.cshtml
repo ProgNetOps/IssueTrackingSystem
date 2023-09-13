@@ -35,7 +35,7 @@
                         <td class="text-center text-warning"> @item?.State?.Region?.RegionName </td>
                             <td class="text-center text-warning">@item?.LocationAddress</td>
                             <td class="text-center">
-                                <div class="text-center bts-action-buttons">
+                            <div class="text-center bts-action-buttons" style="display:flex; justify-content:space-around; align-items:center;">
                                 <a asp-controller="BTS" asp-action="Edit" class="text-primary bts-icon-button"><i class="bi bi-pencil-square"></i></a>
                                 <a style="text-decoration:none;cursor:pointer;color:#fff;" asp-controller="BTS" asp-action="Details" asp-route-id="@item?.Id"><i class="bi bi-eye-fill"></i></a>
                                 </div>
@@ -66,8 +66,8 @@
                         <tr>
                             <td class="text-center text-warning">@item.BTSName</td>
                             <td class="text-center text-warning">@item.LocationAddress</td>
-                            <td class="text-center">
-                                <div class="text-center bts-action-buttons">
+                        <td class="text-center" style=" font-size: 2em;">
+                            <div class="text-center bts-action-buttons" style="display:flex; justify-content:space-around; align-items:center;">
                                     <a asp-controller="BTS" asp-action="Details" asp-route-id="@item.Id" class="text-success bts-icon-button"> <i class="fas fa-eye"></i></a>
                                 </div>
                             </td> 
@@ -79,5 +79,5 @@
 
     </form>
    
-    @await Html.PartialAsync("_CreateNewPartialView","BTS");
+    @await Html.PartialAsync("_CreateNewPartialView","BTSDTO");
 </section>

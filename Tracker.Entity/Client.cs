@@ -31,7 +31,7 @@ namespace Tracker.Entity
         [StringLength(100)]
         public string? ClientName { get; set; }
         
-        //public List<Circuit>? Circuits { get; set; }
+        public List<Circuit>? Circuits { get; set; }
         #endregion
     }
 

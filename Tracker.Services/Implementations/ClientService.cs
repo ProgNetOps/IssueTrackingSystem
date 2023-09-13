@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,12 @@ namespace Tracker.Services.Implementations
         public ClientService(AppDbContext context):base(context)
         {
             this.context = context;
+        }
+
+       public async override Task<Client?> GetByIdAsync(int id)
+        {
+           return await context.Clients.Include(q => q.Circuits).FirstOrDefaultAsync(q => q.Id == id);
+
         }
     }
 }

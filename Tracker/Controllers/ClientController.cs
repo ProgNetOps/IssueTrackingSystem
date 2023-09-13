@@ -30,9 +30,10 @@ namespace Tracker.Controllers
         {
             ViewData["Title"] = "Client";
 
-            var Client = await service.GetByIdAsync(id);
-            var ClientDTO = mapper.Map<ClientDTO>(Client);
-            return View(ClientDTO);
+            var client = await service.GetByIdAsync(id);
+            var clientDTO = mapper.Map<ClientDTO>(client);
+            return View(clientDTO);
+
 
         }
     }
