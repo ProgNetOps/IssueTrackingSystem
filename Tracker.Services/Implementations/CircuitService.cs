@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,12 @@ namespace Tracker.Services.Implementations
             this.context = context;
         }
 
+        public async override Task<Circuit?> GetByIdAsync(int id)
+        {
+            return await context.Circuits.Include(q => q.State).
+                Include(q => q.Client).
+                FirstOrDefaultAsync(q => q.Id == id);
+        }
 
     }
 }

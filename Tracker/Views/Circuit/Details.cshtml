@@ -1,0 +1,92 @@
+﻿@model CircuitDTO
+
+<section>
+    @{
+        string naira = "\u20a6";
+        string revenue = String.Format("{0:##,#}", Model.AnnualRevenue);
+        string annualRevenue = naira + " " + revenue;
+    }
+   
+    <input asp-for="@Model.Id" hidden />
+    <h2 class="text-center m-3" id="mainHeader">@Model.CircuitName</h2>
+
+    <div class="form-group row m-2">
+        <label asp-for="CircuitRef" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="CircuitRef" readonly class="text-primary form-control" />
+        </div>
+    </div>
+    <div class="form-group row m-2">
+        <label asp-for="CircuitName" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="CircuitName" readonly class="text-primary form-control" />
+        </div>
+    </div>
+    <div class="form-group row m-2">
+        <label asp-for="Client.ClientName" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="Client.ClientName" readonly class="text-primary form-control" />
+        </div>
+    </div>
+    <div class="form-group row m-2">
+        <label asp-for="Address" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="Address" readonly class="text-primary form-control" />
+        </div>
+    </div>
+    <div class="form-group row m-2">
+        <label asp-for="Bandwidth" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="Bandwidth" readonly class="text-primary form-control" />
+        </div>
+    </div>
+    <div class="form-group row m-2">
+        <label asp-for="ServiceType" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="ServiceType" readonly class="text-primary form-control" />
+        </div>
+    </div>
+    <div class="form-group row m-2">
+        <label asp-for="AnnualRevenue" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="AnnualRevenue" readonly class="text-primary form-control" value="@annualRevenue">
+        </div>
+    </div>
+    <div class="form-group row m-2">
+        <label asp-for="Town" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="Town" readonly class="text-primary form-control" />
+        </div>
+    </div>
+    <div class="form-group row m-2">
+        <label asp-for="State.StateName" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="State.StateName" readonly class="text-primary form-control" />
+        </div>
+    </div>
+    <div class="form-group row m-2">
+        <label asp-for="AccountManager" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="AccountManager" readonly class="text-primary form-control" />
+        </div>
+    </div>
+    <div class="form-group row m-2">
+        <label asp-for="ProjectManager" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="ProjectManager" readonly class="text-primary form-control" />
+        </div>
+    </div>
+    <div class="form-group row m-2">
+        <label asp-for="TAM" class="col-sm-4 col-form-label text-primary"></label>
+        <div class="col-sm-8">
+            <input asp-for="TAM" readonly class="text-primary form-control" />
+        </div>
+    </div>   
+
+    <div class="form-group row text-center mt-5">
+        <div class=" col-4 offset-4">
+            <a class="btn btn-warning" asp-controller="Circuit" asp-action="Index">Back</a>
+        </div>
+    </div>
+
+</section>

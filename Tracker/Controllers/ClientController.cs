@@ -33,8 +33,6 @@ namespace Tracker.Controllers
             var client = await service.GetByIdAsync(id);
             var clientDTO = mapper.Map<ClientDTO>(client);
             return View(clientDTO);
-
-
         }
     }
 }

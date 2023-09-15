@@ -21,9 +21,19 @@ namespace Tracker.Controllers
             ViewData["Title"] = "Circuits";
             
             var circuits = await service.GetAllAsync();
-            var circuitsDTO = mapper.Map<IEnumerable<CircuitDTO>>(circuits);
+            var circuitsDTO = mapper.Map<IEnumerable<CircuitDTO?>>(circuits);
 
             return View(circuitsDTO);
+        }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            ViewData["Title"] = "Circuit";
+
+            var circuit = await service.GetByIdAsync(id);
+            var circuitDTO = mapper.Map<CircuitDTO?>(circuit);
+
+            return View(circuitDTO);
         }
     }
 }

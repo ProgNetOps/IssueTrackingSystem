@@ -20,6 +20,7 @@ namespace Tracker.Models.DTOs
         /// </summary>
         [Required]
         [StringLength(100)]
+        [Display(Name ="Client")]
         public string? ClientName { get; set; }
 
         public List<CircuitDTO>? Circuits { get; set; }

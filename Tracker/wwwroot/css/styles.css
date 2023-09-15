@@ -164,13 +164,15 @@ header {
 .content-container {
     width: 90%;
     margin: auto;
-    padding-bottom: 300px;
+    /*margin-bottom: 700px !important;*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 main{
     margin:auto;
+    width: 95%;
+    padding: 0 5px;
 }
-
 
 
 /*==================== FOOTER ====================*/
@@ -180,11 +182,12 @@ main{
     padding: calc(1vw + 1rem) 5vw;
     max-width:1400px;
     width: 100%;
-    position: absolute;
+    z-index: -7;
+    /*position: absolute;
     bottom: 0;
     left: 0;
     right:0;
-    z-index:auto;
+    z-index:auto;*/
 
 }
 
@@ -241,8 +244,8 @@ main{
     align-items: center;
     justify-content: center;
     z-index: 100;
-    height: calc(3rem + 3vw);
-    width: calc(3rem + 3vw);
+    height: calc(2rem + 2vw);
+    width: calc(2rem + 2vw);
     background-color: #f24;
     border-radius: 50%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
@@ -254,6 +257,23 @@ main{
     text-decoration: none;
     cursor: pointer;
 }
+
+
+
+#search-bar {
+    position: sticky;
+    top: calc(3rem + 5vw);
+    z-index: 50;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: calc(.5vw + .5rem) calc(.5vw + .5rem) 0 0;
+    background-color: #f24;
+    color: #fff;
+}
+
+
 
 @media screen and (max-width: 750px) {
 
@@ -273,12 +293,11 @@ main{
 
     header {
         width: 100%;
-        position: fixed;
+        /*position: fixed;
         bottom: 0;
         left: 0;
-        z-index: var(--z-fixed);
-        background-color: var(--body-color);        
-        border-radius: 1rem 1rem 0 0;
+        z-index: var(--z-fixed);     
+        border-radius: 1rem 1rem 0 0;*/
         
     }
 

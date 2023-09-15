@@ -15,7 +15,7 @@ namespace Tracker.Controllers
 
         public IActionResult Index()
         {
-            @ViewData["Title"] = "Home Page";
+            @ViewData["Title"] = "Home";
             
             return View();
         }

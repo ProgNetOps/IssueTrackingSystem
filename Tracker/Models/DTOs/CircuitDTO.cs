@@ -13,6 +13,7 @@ namespace Tracker.Models.DTOs
         /// <summary>
         /// This uniquely identifies a link
         /// </summary>
+        [Display(Name ="Circuit Reference")]
         public Guid CircuitRef { get; set; }
 
         /// <summary>
@@ -20,6 +21,7 @@ namespace Tracker.Models.DTOs
         /// </summary>
         public int ClientId { get; set; }
         [ForeignKey(nameof(ClientId))]
+        [Display(Name ="Client Name")]
         public ClientDTO Client { get; set; }
 
         /// <summary>
@@ -27,18 +29,21 @@ namespace Tracker.Models.DTOs
         /// </summary>
         [Required]
         [StringLength(100)]
-        public string CircuitName { get; set; }
+        [Display(Name ="Circuit")]
+        public string? CircuitName { get; set; }
 
         /// <summary>
         /// Address of client
         /// </summary>
         [StringLength(200)]
+        [Display(Name ="Address")]
         public string? Address { get; set; }
 
         /// <summary>
         /// Town where client's office is situated
         /// </summary>
         [StringLength(50)]
+        [Display(Name = "Town")]
         public string? Town { get; set; }
 
         /// <summary>
@@ -46,7 +51,7 @@ namespace Tracker.Models.DTOs
         /// </summary>
         public int StateId { get; set; }
         [ForeignKey(nameof(StateId))]
-        public State State { get; set; }
+        public StateDTO State { get; set; }
 
         /// <summary>
         /// The latitude coordinate of the base station
@@ -63,18 +68,27 @@ namespace Tracker.Models.DTOs
         /// </summary>
         public string? Coordinates { get; set; }
 
+        [Display(Name = "Service Type")]
         public string? ServiceType { get; set; }
 
+        [Display(Name = "JCC Approval Date")]
         public DateTime? JCCApprovedDate { get; set; }
 
+        [Display(Name = "Annual Revenue")]
         public double? AnnualRevenue { get; set; }
 
+        [Display(Name ="Bandwidth (Mbps)")]
         public double? Bandwidth { get; set; }
 
         public string? CircuitState { get; set; }
 
+        [Display(Name = "Account Manager")]
         public string? AccountManager { get; set; }
+
+        [Display(Name = "Project Manager")]
         public string? ProjectManager { get; set; }
+
+        [Display(Name = "Technical Account Manager")]
         public string? TAM { get; set; }
 
     }

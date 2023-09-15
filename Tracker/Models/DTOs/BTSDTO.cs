@@ -52,6 +52,7 @@ namespace Tracker.Models.DTOs
         /// The calculated coordinates values
         /// </summary>
         [StringLength(50)]
+        [Display(Name ="Coordinates")]
         public string? Coordinates { get; set; }
 
         public List<NetworkSwitch>? Switches { get; set; }

@@ -25,10 +25,6 @@
       "PackagePath": "staticwebassets\\glo_smaller.png"
     },
     {
-      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\icons8_eye.svg",
-      "PackagePath": "staticwebassets\\icons8_eye.svg"
-    },
-    {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
