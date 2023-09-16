@@ -10,7 +10,7 @@
             <input asp-for="ClientRef" readonly class="text-primary form-control" />
         </div>
     </div>
-
+    
     <div class="form-group row m-2">
         <label asp-for="ClientName" class="col-sm-4 col-form-label text-primary"></label>
         <div class="col-sm-8">
@@ -27,11 +27,14 @@
                     <th class="text-center " style="width:15%">
                         <a class="text-white">NAME</a>
                     </th>
-                    <th class="text-center" style="width:20%">
+                    <th class="text-center" style="width:15%">
                         <a class="text-white">ADDRESS</a>
                     </th>
                     <th class="text-center" style="width:10%">
                         <a class="text-white">STATE</a>
+                    </th>
+                    <th class="text-center" style="width:10%">
+                        <a class="text-white">SERVICE</a>
                     </th>
                     <th class="text-center " style="width:10%">
                         <a class="text-white">BANDWIDTH</a>
@@ -42,7 +45,7 @@
                     <th class="text-center " style="width:10%">
                         <a class="text-white">ACCOUNT MANAGER</a>
                     </th>
-                    <th class="text-center" style="width:15%">
+                    <th class="text-center" style="width:10%">
                         <a class="text-white">STATUS</a>
                     </th>
                     <th class="text-center" style="width:10%">ACTION</th>
@@ -52,17 +55,19 @@
                 @foreach (var item in Model.Circuits)
                 {
                     <tr>
-                        <td class="text-center text-warning" style="width:15%">@item?.CircuitName</td>
-                        <td class="text-center text-warning" style="width:20%"> @item?.Address</td>
+                        <td class="text-left text-warning" style="width:15%">@item?.CircuitName</td>
+                        <td class="text-left text-warning" style="width:15%"> @item?.Address</td>
                         <td class="text-center text-warning" style="width:10%"> @item?.State?.StateName</td>
+                        <td class="text-center text-warning" style="width:10%"> @item?.ServiceType</td>
                         <td class="text-center text-warning" style="width:10%"> @item?.Bandwidth</td>
                         <td class="text-center text-warning" style="width:10%"> @item?.ProjectManager</td>
                         <td class="text-center text-warning" style="width:10%"> @item?.AccountManager</td>
-                        <td class="text-center text-warning" style="width:15%"> @item?.CircuitState</td>
+                        <td class="text-center text-warning" style="width:10%"> @item?.CircuitState</td>
                         <td style="width:10%; font-size: 1.4em;">
                             <div class="bts-action-buttons" style="display:flex; justify-content:space-around; align-items:center;">
                                 <a asp-controller="Client" asp-action="Edit" class="text-primary bts-icon-button"><i class="bi bi-pencil-square"></i></a>
                                 <a style="text-decoration:none;cursor:pointer;color:#fff;" asp-controller="Circuit" asp-action="Details" asp-route-id="@item?.Id"><i class="bi bi-eye-fill"></i></a>
+                                <a style="text-decoration:none;cursor:pointer;color:#fff;" asp-controller="Circuit" asp-action="Details" asp-route-id="@item?.Id"><i class="bi bi-tools"></i></a>
                             </div>
                         </td>
                     </tr>
@@ -70,5 +75,13 @@
             </tbody>
         </table>
     </div>
- 
+    <div class="form-group row text-center m-3">
+        <div class=" col-4 offset-4">
+            <a class="btn btn-warning" asp-controller="Client" asp-action="Index">Back</a>
+        </div>
+    </div>
+
+    @await Html.PartialAsync("_EditPartialView","ClientDTO");
+
+
 </section>

@@ -22,7 +22,10 @@ namespace Tracker.Services.Implementations
 
        public async override Task<Client?> GetByIdAsync(int id)
         {
-           return await context.Clients.Include(q => q.Circuits).FirstOrDefaultAsync(q => q.Id == id);
+           return await context.Clients.
+                Include(q => q.Circuits).
+                ThenInclude(q => q.State).
+                FirstOrDefaultAsync(q => q.Id == id);
 
         }
     }

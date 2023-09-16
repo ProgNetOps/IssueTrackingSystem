@@ -37,9 +37,12 @@
         </div>
     </div>
 
-    <div class="form-group row text-center mt-5">
+    <div class="form-group row text-center m-3">
         <div class=" col-4 offset-4">
             <a class="btn btn-warning" asp-controller="BTS" asp-action="Index">Back</a>
         </div>
     </div>
+
+    @await Html.PartialAsync("_EditPartialView","BTSDTO");
+
 </section>
