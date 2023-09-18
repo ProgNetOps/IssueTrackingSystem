@@ -17,11 +17,14 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 //Add BTS Service
 builder.Services.AddScoped<IBaseStationService, BaseStationService>();
 
-//Add ClientS Service
+//Add Client Service
 builder.Services.AddScoped<IClientService, ClientService>();
 
-//Add ClientS Service
+//Add Circuit Service
 builder.Services.AddScoped<ICircuitService, CircuitService>();
+
+//Add Employee Service
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
 //Add AutoMapper
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));

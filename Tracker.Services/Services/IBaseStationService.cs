@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Tracker.Entity;
+using Tracker.Entity.Contract;
 using Tracker.Services.Base;
 
 namespace Tracker.Services.Services
 {
-    public interface IBaseStationService : IEntityBaseRepository<BTS>
+    public interface IBaseStationService : IEntityBaseRepository<BTS>,ISearchable<BTS>
     {
         
     }

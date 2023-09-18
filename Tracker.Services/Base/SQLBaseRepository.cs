@@ -52,5 +52,7 @@ namespace Tracker.Services.Base
             entityEntry.State = EntityState.Modified;
             await context.SaveChangesAsync();
         }
+
+        
     }
 }

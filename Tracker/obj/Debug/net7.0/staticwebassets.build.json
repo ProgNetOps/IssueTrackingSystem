@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bfi+lTYGZ6c9tDySW5z1j9lRICtiHqAP8ZKP/FGvMlw=",
+  "Hash": "HsXBwDz50Z1TaAQnbhCGeu1L0p3nGVZY+0F/GFhT/Tk=",
   "Source": "Tracker",
   "BasePath": "_content/Tracker",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Repository\\IssueTrackingSystem\\Tracker\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Tracker.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\city.jpg",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "city.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\city.jpg"
     },
     {
       "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\CustomStyle.css",

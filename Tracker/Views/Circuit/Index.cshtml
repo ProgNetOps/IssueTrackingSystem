@@ -5,7 +5,7 @@
 <form method="get" asp-action="index">
 
 
-        <h1 id="mainHeader" class="m-3 text-center">Customer Links</h1>
+        <h1 class="m-3 text-center text-black">Customer Links</h1>
 
         <div class=" p-3 mb-3" id="search-bar">
             <div class="form-group" style="width:25%;">
@@ -42,24 +42,30 @@
     <table class="table table-striped table-dark no-italics" style="max-width:100%">
         <thead>
             <tr>
-                    <th class="text-left " style="width:20%;">
+                    <th class="text-left text-white" style="width:8%;">S/N</th>
+                <th class="text-left " style="width:17%;">
                     <a class="text-white" asp-action="index">NAME</a>
                 </th>
-                    <th class="text-left" style="width:35%;">ADDRESS</th>
-                    <th class="text-left" style="width:15%;">SERVICE</th>
-                <th class="text-left" style="width:15%;">REVENUE</th>
+                    <th class="text-left" style="width:33%;">ADDRESS</th>
+                    <th class="text-left" style="width:12%;">SERVICE</th>
+                <th class="text-left" style="width:15%;">ACCOUNT MANAGER</th>
                 <th class="text-center" style="width:15%;">ACTION</th>
             </tr>
 
         </thead>
         <tbody>
+                @{
+                    int counter = 0;
+                }
             @foreach (var item in Model)
             {
+                counter = counter + 1;
                 <tr>
-                        <td class="text-left text-warning" style="width:20%;">@item?.CircuitName</td>
-                        <td class="text-left text-warning" style="width:35%; word-break:break-word;">@item?.Address</td>
-                        <td class="text-left text-warning" style="width:15%;">@item?.ServiceType</td>
-                        <td class="text-left text-warning" style="width:15%;">@item?.AnnualRevenue</td>
+                        <td class="text-left text-white" style="width:8%;">@counter</td>
+                        <td class="text-left text-warning" style="width:17%;">@item?.CircuitName</td>
+                        <td class="text-left text-warning" style="width:33%; word-break:break-word;">@item?.Address</td>
+                        <td class="text-left text-warning" style="width:12%;">@item?.ServiceType</td>
+                        <td class="text-left text-warning" style="width:15%;">@item?.AccountManager</td>
 
                     <td style="width:15%; font-size: 1.4em;">
                         <div class="bts-action-buttons" style="display:flex; justify-content:space-around; align-items:center;">
@@ -78,6 +84,6 @@
 
 </form>
 
-@await Html.PartialAsync("_CreateNewPartialView","CircuitDTO");
+@await Html.PartialAsync("_CreateNewPartialView","CircuitDTO")
 
 </section>

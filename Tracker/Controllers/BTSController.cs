@@ -17,14 +17,34 @@ namespace Tracker.Controllers
             this.mapper = mapper;
         }
 
-        public async Task<IActionResult> Index()
+        
+        public async Task<IActionResult> Index (string? searchBy = null, string? searchString = null, int pageNumber = 1, int pageSize = 100)
         {
             ViewData["Title"] = "Base Stations";
 
-            var BaseStations = await service.GetAllAsync();
+            //SEARCH
+            ViewBag.SearchFields = new Dictionary<string, string>()
+            {
+                { nameof(BTSDTO.BTSName), "Site Id" },
+                { nameof(BTSDTO.LocationAddress), "Address" },
+                { nameof(BTSDTO.State.StateName), "State" },
+                { nameof(BTSDTO.State.Region.RegionName), "Region" }
+            };
+
+            
+
+            var BaseStations = await service.GetFilteredResultAsync(searchBy, searchString, pageNumber, pageSize);
+
+
+
+            //To persist the last search values on the view
+            ViewBag.currentSearchBy = searchBy;
+            ViewBag.currentSearchString = searchString;
+
             var BaseStationsDTO = mapper.Map<IEnumerable<BTSDTO>>(BaseStations);
             return View(BaseStationsDTO);
         }
+
 
         public async Task<IActionResult> Details(int id)
         {

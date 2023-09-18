@@ -13,7 +13,8 @@
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
+    /*--text-color: hsl(var(--hue-color), 8%, 45%);*/
+    --text-color: #fff;
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     /*--body-color: hsl(var(--hue-color), 60%, 99%);*/
@@ -68,12 +69,17 @@ html {
 body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color: var(--body-color);
+    background-image: linear-gradient( to top right, rgba(128, 214, 113, 0.8), rgba(40, 180, 133, 0.8) ), url(/city.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    /*background-color: var(--body-color);*/
     color: var(--text-color);
     min-height: 100vh;
-    max-width: 1400px;
+    max-width: 1800px;
     position: relative;
-    margin: 0;
+    margin: auto;
 }
 
 h1,
@@ -104,7 +110,7 @@ header {
     /*top: 0;*/
     left: 0;
     z-index: var(--z-fixed);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: .3rem .3rem .3rem .3rem rgba(0, 0, 0, 0.3);
 }
 
 
@@ -148,7 +154,7 @@ header {
     }
 
     .nav__item:active {
-        box-shadow: 0.1rem 0.1rem .2rem 0.1rem #333;
+        box-shadow: 0.2rem 0.2rem .4rem 0.2rem #333;
         transform: translateY(0);
     }
 
@@ -163,18 +169,35 @@ header {
 
 .content-container {
     width: 90%;
+    margin: 5rem auto;
+    box-shadow: .3rem .3rem .5rem .4rem rgba(0, 0, 0, 0.5);
+    /*background-color: var(--body-color);*/
+    background-color: rgba(var(--body-color), 0.7);
+    backdrop-filter: blur(5px) brightness(90%);
+    border-radius: 1vw;
+    min-height: 60vh;
+    padding: 2rem;
+}
+
+
+main {
     margin: auto;
-    margin-bottom: 3rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-main{
-    margin:auto;
     width: 95%;
-    padding: 0 5px;
-    /*min-height: 10rem;*/
+    padding: 2px;
+    border-radius: 1rem;
+    background-color: var(--body-color);
+    box-shadow: .3rem .3rem .5rem .4rem rgba(0, 0, 0, 0.5);
 }
 
+section {
+    margin: auto;
+    border-radius: 1rem;
+}
+
+section td{
+    word-wrap: break-word;
+    word-break: break-all;
+}
 
 /*==================== FOOTER ====================*/
 
@@ -239,18 +262,18 @@ main{
 
 .fixed-button {
     position: fixed;
-    bottom: 40vh;
+    bottom: 55vh;
+    right: 5vw;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 100;
     height: calc(3rem + 1.5vw);
     width: calc(3rem + 1.5vw);
-    background-color: #f24;
+    background-color: rgb(40, 180, 133);
     border-radius: 50%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-    text-shadow: 5px 3px rgba(0, 0, 0, 0.8);
-    right: 5vw;
+    text-shadow: 4px 2px rgba(0, 0, 0, 0.5);
     color: #fff;
     font-size: calc(3rem + 2vw);
     font-weight: bold;
@@ -261,9 +284,26 @@ main{
 }
 
     .fixed-button:hover {
-        outline: calc(1vw) solid #f24;
-        outline-offset: calc(1rem + 1vw);
+        outline: .5vw solid #fff;
+        background-color: #fff;
+        color: rgb(40, 180, 133);
+        outline-offset: calc(.5rem + 1vw);
     }
+
+
+#search-bar {
+    position: sticky;
+    top: calc(2rem + 5vw);
+    z-index: 50;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: calc(.5vw + .5rem) calc(.5vw + .5rem) 0 0;
+    background-image: linear-gradient( to top right, rgba(128, 214, 113, 0.8), rgba(40, 180, 133, 0.8) );
+    color: #fff;
+    text-align:center;
+}
 
 .no-italics {
     font-style: normal;
@@ -297,6 +337,8 @@ main{
 
     .content-container {
         width: 100%;
+        position:relative;
+
     }
 
 
@@ -305,7 +347,7 @@ main{
         position: fixed;
         bottom: 0;
         left: 0;
-        z-index: var(--z-fixed);     
+        z-index: var(--z-fixed);
         border-radius: 1rem 1rem 0 0;
     }
 

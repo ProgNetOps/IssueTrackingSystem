@@ -31,7 +31,7 @@ namespace Tracker.Entity
         [Required]
         [Display(Name ="NE Name")]
         [StringLength(50)]
-        public string NEName { get; set; }
+        public string? NEName { get; set; }
 
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace Tracker.Entity
         [Required]
         [Display(Name = "NE Type (MPU Type)")]
         [StringLength(50)]
-        public string NEType { get; set; }
+        public string? NEType { get; set; }
 
         /// <summary>
         /// IP Address of router device
@@ -48,7 +48,7 @@ namespace Tracker.Entity
         [Required]
         [Display(Name = "NE IP Address")]
         [StringLength(15)]
-        public string NEIpAddress { get; set; }
+        public string? NEIpAddress { get; set; }
 
         #endregion
     }

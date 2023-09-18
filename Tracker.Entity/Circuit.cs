@@ -86,6 +86,8 @@ namespace Tracker.Entity
         public string? AccountManager { get; set; }
         public string? ProjectManager { get; set; }
         public string? TAM { get; set; }
+        //public string? TransmissionPath { get; set; }
+        //public double? PathLength { get; set; }
 
     }
 }

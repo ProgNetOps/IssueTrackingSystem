@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Tracker.bundle.scp.css"
     },
     {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\city.jpg",
+      "PackagePath": "staticwebassets\\city.jpg"
+    },
+    {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\CustomStyle.css",
       "PackagePath": "staticwebassets\\css\\CustomStyle.css"
     },

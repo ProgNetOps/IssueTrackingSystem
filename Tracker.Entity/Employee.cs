@@ -47,6 +47,13 @@ namespace Tracker.Entity
 
 
         /// <summary>
+        /// Staff ID of Glo staff
+        /// </summary>
+        [Required(ErrorMessage ="staff id is required")]
+        public int StaffId { get; set; }
+
+
+        /// <summary>
         /// Official email address of Glo staff
         /// </summary>
         [StringLength(70), Required(ErrorMessage = "Official email address is required")]
@@ -55,6 +62,13 @@ namespace Tracker.Entity
         [EmailAddress]
         public string? Email { get; set; }
 
+
+        /// <summary>
+        /// Department
+        /// </summary>
+        public string? Department { get; set; }
+
+        public string? photoPath { get; set; }
 
         /// <summary>
         /// Shows staff is still in company's employ
