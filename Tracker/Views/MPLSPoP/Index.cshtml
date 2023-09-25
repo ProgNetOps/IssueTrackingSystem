@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<MPLSPoPDTO>
 <section>
-    <h1 class="m-3 mainHeader">IP MPLS PoPs</h1>
+    <h1 class="m-3 mainHeader">MPLS PoP</h1>
     @if (Model.Count() == 0)
     {
         <div>
@@ -15,7 +15,7 @@
                 <tr>
                     <th class="text-center " style="width:5%">S/N</th>
                     <th class="text-center " style="width:15%">
-                        <a class="text-white" asp-action="index">BTS</a>
+                        <a class="text-white" asp-action="index">Base Station</a>
                     </th>
                     <th class="text-center" style="width:20%">
                         <a class="text-white" asp-action="index">NE NAME</a>
@@ -55,6 +55,10 @@
                     </tr>
                 }
             </tbody>
+        
         </table>
     }
+
+
+    @await Html.PartialAsync("_CreateNewPartialView","BTSDTO")
 </section>

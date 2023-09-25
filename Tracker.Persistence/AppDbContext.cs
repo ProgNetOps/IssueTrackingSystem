@@ -42,6 +42,7 @@ namespace Tracker.Persistence
         public DbSet<Circuit> Circuits { get; set; }
         public DbSet<MPLSPoP> MPLSPoPs { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<CircuitTechnicalDetails> CircuitTechnicalDetails { get; set; }
 
     }
 }

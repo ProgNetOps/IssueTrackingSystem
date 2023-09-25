@@ -32,7 +32,8 @@ namespace Tracker.Services.Implementations
         {
             return await context.Set<BTS>().
                 Include(q => q.State).
-                ThenInclude(q => q.Region).           
+                ThenInclude(q => q.Region).
+                Include(q => q.DCNRouters).
                 FirstOrDefaultAsync(x => x.Id == id);
         }
 

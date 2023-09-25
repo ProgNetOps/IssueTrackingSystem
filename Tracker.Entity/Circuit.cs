@@ -91,13 +91,10 @@ namespace Tracker.Entity
         public string? ProjectManager { get; set; }
         [StringLength(100)]
         public string? TAM { get; set; }
-        //[StringLength(500)]
-        //public string? ContactPersonsDetails { get; set; }
-        //public string? TransmissionPath { get; set; }
-        //public double? PathLength { get; set; }
 
-        //public int? MPLSPoPId { get; set; }
-        //[ForeignKey(nameof(MPLSPoPId))]
-        //public MPLSPoP? MPLSPoP { get; set; }
+        //public int CircuitTechnicalDetailsId { get; set; }
+        //[ForeignKey(nameof(CircuitTechnicalDetails))]
+        //public CircuitTechnicalDetails? TechnicalDetails { get; set; }
+        
     }
 }

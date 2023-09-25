@@ -28,15 +28,17 @@ namespace Tracker.Entity
         [Required(AllowEmptyStrings = false, ErrorMessage = "The Site Id of a base station is required")]
         [StringLength(10, ErrorMessage = "Maximum character count of 10 is exceeded")]
         [Display(Name ="Base Station")]
-        public string BTSName { get; set; }
+        public string? BTSName { get; set; }
 
 
         /// <summary>
         /// Address or landmark of the location of the base station
         /// </summary>
-        [StringLength(300, ErrorMessage = "Maximun character count of 300 is exceeded")]
+        [StringLength(300, ErrorMessage = "Maximum character count of 300 is exceeded")]
         [Display(Name = "Address/Landmark")]
         public string? LocationAddress { get; set; }
+
+        public List<MPLSPoP>? DCNRouters { get; set; }
 
 
         /// <summary>

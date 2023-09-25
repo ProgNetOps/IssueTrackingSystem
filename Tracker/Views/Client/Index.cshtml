@@ -3,8 +3,6 @@
 
 <section>
 
-    <form method="get" asp-action="index">
-
         <h1 class="m-3 mainHeader">CLIENTS</h1>
 
         <div class=" p-2 mb-2" id="search-bar">
@@ -115,10 +113,7 @@
                 }
             </tbody>
         </table>
-              
-
-    </form>
-
+             
 
     @await Html.PartialAsync("_CreateNewPartialView","ClientDTO")
 

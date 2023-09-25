@@ -46,7 +46,7 @@ namespace Tracker.Entity
         /// <summary>
         /// The backup configuration of the switch
         /// </summary>
-        [StringLength(4000)]
+        [StringLength(5000)]
         public string? ConfigBackup { get; set; }
 
 

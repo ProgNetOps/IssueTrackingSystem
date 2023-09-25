@@ -14,6 +14,7 @@ namespace Tracker.Mappings
             CreateMap<Client, ClientDTO>().ReverseMap();
             CreateMap<Circuit, CircuitDTO>().ReverseMap();
             CreateMap<MPLSPoP, MPLSPoPDTO>().ReverseMap();
+            CreateMap<CircuitTechnicalDetails,CircuitTechnicalDetailsDTO>().ReverseMap();
 
         }
     }

@@ -31,6 +31,8 @@ builder.Services.AddScoped<IMPLSPoPService, MPLSPoPService>();
 //Add Employee Service
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
+//Add CircuitTechnicalDetails Service
+builder.Services.AddScoped<ICircuitTechnicalDetailsService, CircuitTechnicalDetailsService>();
 
 //Add AutoMapper
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));

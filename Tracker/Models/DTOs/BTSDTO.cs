@@ -34,6 +34,7 @@ namespace Tracker.Models.DTOs
         [ForeignKey(nameof(StateId))]
         public State State { get; set; }
 
+        public List<MPLSPoPDTO>? DCNRouters { get; set; }
 
         /// <summary>
         /// The latitude of the base station
