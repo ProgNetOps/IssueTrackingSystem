@@ -5,13 +5,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tracker.Entity.Contract;
 
 namespace Tracker.Entity
 {
     /// <summary>
     /// Class that represents the MPLSPoP
     /// </summary>
-    public class MPLSPoP
+    public class MPLSPoP:IEntityBase
     {
         #region Properties
         [Key]
@@ -22,8 +23,7 @@ namespace Tracker.Entity
         /// </summary>
         public int BTSId { get; set; }
         [ForeignKey(nameof(BTSId))]
-        public BTS BTS { get; set; }
-
+        public BTS? BTS { get; set; }
 
         /// <summary>
         /// Name of router
@@ -32,7 +32,6 @@ namespace Tracker.Entity
         [Display(Name ="NE Name")]
         [StringLength(50)]
         public string? NEName { get; set; }
-
 
         /// <summary>
         /// Type of router
@@ -49,6 +48,8 @@ namespace Tracker.Entity
         [Display(Name = "NE IP Address")]
         [StringLength(15)]
         public string? NEIpAddress { get; set; }
+
+        public List<Circuit>? Circuits { get; set; }
 
         #endregion
     }

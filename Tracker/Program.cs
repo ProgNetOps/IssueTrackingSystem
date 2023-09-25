@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Tracker.Entity;
 using Tracker.Mappings;
 using Tracker.Persistence;
 using Tracker.Services.Implementations;
@@ -23,8 +25,12 @@ builder.Services.AddScoped<IClientService, ClientService>();
 //Add Circuit Service
 builder.Services.AddScoped<ICircuitService, CircuitService>();
 
+//Add MPLSPoP Service
+builder.Services.AddScoped<IMPLSPoPService, MPLSPoPService>();
+
 //Add Employee Service
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+
 
 //Add AutoMapper
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
@@ -34,8 +40,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseExceptionHandler("/Error");//For unhandled exceptions
+    app.UseStatusCodePagesWithRedirects("/Error/{0}");//For http status code errors
     app.UseHsts();
 }
 

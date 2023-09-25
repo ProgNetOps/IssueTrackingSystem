@@ -1,12 +1,4 @@
 is_global = true
-build_property.TargetFramework = net7.0
-build_property.TargetPlatformMinVersion = 
-build_property.UsingMicrosoftNETSdkWeb = true
-build_property.ProjectTypeGuids = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Tracker
 build_property.RootNamespace = Tracker
 build_property.ProjectDir = C:\Repository\IssueTrackingSystem\Tracker\
@@ -44,6 +36,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Employee/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Repository/IssueTrackingSystem/Tracker/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -52,8 +52,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Repository/IssueTrackingSystem/Tracker/Views/MPLSPoP/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTVBMU1BvUFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/MPLSPoP/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTVBMU1BvUFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Repository/IssueTrackingSystem/Tracker/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Shared/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/Shared/_CreateNewPartialView.cshtml]
@@ -62,6 +74,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/Shared/_EditPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FZGl0UGFydGlhbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Shared/_ServiceMgtLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZXJ2aWNlTWd0TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Shared/_TroubleTicketLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ucm91YmxlVGlja2V0TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/Shared/_ValidationScriptsPartial.cshtml]

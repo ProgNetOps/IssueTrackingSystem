@@ -42,7 +42,7 @@ namespace Tracker.Entity
         /// <summary>
         /// Address of client
         /// </summary>
-        [StringLength(200)]
+        [StringLength(300)]
         public string? Address { get; set; }
 
         /// <summary>
@@ -71,6 +71,8 @@ namespace Tracker.Entity
         /// <summary>
         /// Coordinates in degrees, minutes and seconds
         /// </summary>
+
+        [StringLength(50)]
         public string? Coordinates { get; set; }
 
         public string? ServiceType { get; set; }
@@ -83,11 +85,19 @@ namespace Tracker.Entity
 
         public string? CircuitState { get; set; }
 
+        [StringLength(100)]
         public string? AccountManager { get; set; }
+        [StringLength(100)]
         public string? ProjectManager { get; set; }
+        [StringLength(100)]
         public string? TAM { get; set; }
+        //[StringLength(500)]
+        //public string? ContactPersonsDetails { get; set; }
         //public string? TransmissionPath { get; set; }
         //public double? PathLength { get; set; }
 
+        //public int? MPLSPoPId { get; set; }
+        //[ForeignKey(nameof(MPLSPoPId))]
+        //public MPLSPoP? MPLSPoP { get; set; }
     }
 }

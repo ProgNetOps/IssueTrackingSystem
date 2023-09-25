@@ -8,7 +8,7 @@
     }
    
     <input asp-for="@Model.Id" hidden />
-    <h2 class="text-center text-black m-3">@Model.CircuitName</h2>
+    <h2 class="m-3 secondaryHeader">@Model.CircuitName</h2>
 
     <div class="form-group row m-2">
         <label asp-for="CircuitRef" class="col-sm-4 col-form-label text-black"></label>
@@ -97,9 +97,16 @@
         </div>
     </div>
 
+    @* <div class="form-group row m-2">
+        <label asp-for="ContactPersonsDetails" class="col-sm-4 col-form-label text-black"></label>
+        <div class="col-sm-8">
+            <textarea asp-for="ContactPersonsDetails" readonly class="text-black form-control"></textarea>
+        </div>
+    </div>
+     *@
     <div class="form-group row text-center m-3">
         <div class=" col-4 offset-4">
-            <a class="btn btn-warning" asp-controller="Circuit" asp-action="Index">Back</a>
+            <a class="btn btn-warning" asp-controller="Circuit" asp-action="Index">Back To Circuits</a>
         </div>
     </div>
 

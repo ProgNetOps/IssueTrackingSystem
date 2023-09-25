@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HsXBwDz50Z1TaAQnbhCGeu1L0p3nGVZY+0F/GFhT/Tk=",
+  "Hash": "BfHrLVtkBaVeYULGYaPisQ35HFDzaBrPvOtqu8wx5VQ=",
   "Source": "Tracker",
   "BasePath": "_content/Tracker",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\css\\ITSStyle.css"
     },
     {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\PhotoStyle.css",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "css/PhotoStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\PhotoStyle.css"
+    },
+    {
       "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\styles.css",
       "SourceId": "Tracker",
       "SourceType": "Discovered",
@@ -151,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\glo_smaller.png"
+    },
+    {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\NoImage.jpg",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "images/NoImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\NoImage.jpg"
     },
     {
       "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\js\\site.js",

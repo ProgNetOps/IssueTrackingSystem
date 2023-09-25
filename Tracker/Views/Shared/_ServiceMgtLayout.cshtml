@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Tracker</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @* <link rel="stylesheet" href="~/Tracker.styles.css" asp-append-version="true" />  *@
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
+    <link rel="stylesheet" href="~/css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="~/glo_smaller.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a asp-controller="Home" asp-action="Index" class="nav__logo">
+                <span style="color:#ffe4e4;background-color:#333;border:5px 0 2px 2px; border-style: solid; border-color: #ffe4e4; border-radius:5px;">ish</span><span style="background-color:#ffe4e4; color:#333; padding-right: 2px;">Tracker</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a asp-controller="Home" asp-action="Index" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i> Clients
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i> Trouble Ticketing
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Manage
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> Login
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="~/glo_smaller.png" class="footer__logo" alt="full logo" />
+        </div>
+        <div class="row">
+            <ul class="footer__navigation">
+                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+            </ul>
+
+            <div class="footer__copyright">
+                <p>
+                    <span style="color:#ffe4e4;background-color:#333;border:5px 0 2px 2px; border-style: solid; border-color: #ffe4e4; border-radius:5px;">ish</span><span style="background-color:#ffe4e4; color:#333; padding-right: 2px;">Tracker</span> &copy; 2023 | All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

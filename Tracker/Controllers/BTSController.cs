@@ -16,8 +16,7 @@ namespace Tracker.Controllers
             this.service = service;
             this.mapper = mapper;
         }
-
-        
+               
         public async Task<IActionResult> Index (string? searchBy = null, string? searchString = null, int pageNumber = 1, int pageSize = 100)
         {
             ViewData["Title"] = "Base Stations";
@@ -34,8 +33,6 @@ namespace Tracker.Controllers
             
 
             var BaseStations = await service.GetFilteredResultAsync(searchBy, searchString, pageNumber, pageSize);
-
-
 
             //To persist the last search values on the view
             ViewBag.currentSearchBy = searchBy;

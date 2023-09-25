@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Tracker</title>   
+	<link href="~/css/itsstyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="ITSBody">
+    <!-- <h1>UNRESOLVED</h1> -->
+    <header>
+        <h1 id="department">Enterprise Service Management</h1>
+        <hr />
+        <div class="heading-container">
+            <h2 class="heading-text" data-text="Issue&nbsp;Tracking&nbsp;System">
+                Issue&nbsp;Tracking&nbsp;System
+            </h2>
+        </div>
+        <hr />
+        <div class="menu-container">
+            <!-- <div class="summary-annotation">SUMMARY</div> -->
+            <ul class="menuBar">
+                <li class="menuItem">
+                    <a href="#">Trouble Ticket</a>
+                </li>
+                <li class="menuItem">
+                    <a href="#">Client Management</a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <h2 id="section-heading">Trouble Tickets</h2>
+
+    <div class="call-support">
+        <i class="fas fa-phone-alt"></i>
+    </div>
+    <div class="create-new">
+        <i class="fas fa-plus"></i>
+    </div>
+
+
+    <div class="card-container">
+
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3 class="ticket-id">#9999999</h3>
+                    <div class="ticket-info">
+                        <i class="fas fa-place-of-worship"></i>
+                        <h3>Religious-Institution</h3>
+                        <h3>Customer Name</h3>
+                        <h3>Location</h3>
+                        <h3>Ageing:</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Issue Description</p>
+
+                    <br /><br /><br /><br />
+                    <p>
+                        <a href="#">Update</a><a href="#">Edit</a><a href="#">Delete</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3 class="ticket-id">#9999999</h3>
+                    <div class="ticket-info">
+                        <i class="fas fa-place-of-worship"></i>
+                        <h3>Religious-Institution</h3>
+                        <h3>Customer Name</h3>
+                        <h3>Location</h3>
+                        <h3>Ageing:</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Issue Description</p>
+
+                    <br /><br /><br /><br />
+                    <p>
+                        <a href="#">Update</a><a href="#">Edit</a><a href="#">Delete</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

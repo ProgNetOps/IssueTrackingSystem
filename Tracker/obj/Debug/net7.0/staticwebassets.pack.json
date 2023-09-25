@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\ITSStyle.css"
     },
     {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\PhotoStyle.css",
+      "PackagePath": "staticwebassets\\css\\PhotoStyle.css"
+    },
+    {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
@@ -27,6 +31,10 @@
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\glo_smaller.png",
       "PackagePath": "staticwebassets\\glo_smaller.png"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\NoImage.jpg",
+      "PackagePath": "staticwebassets\\images\\NoImage.jpg"
     },
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\js\\site.js",

@@ -53,8 +53,6 @@
     --z-modal: 1000;
 }
 
-
-
 /*==================== BASE ====================*/
 * {
     box-sizing: border-box;
@@ -194,10 +192,10 @@ section {
     border-radius: 1rem;
 }
 
-section td{
-    word-wrap: break-word;
-    word-break: break-all;
-}
+    section td {
+        word-wrap: break-word;
+        word-break: break-all;
+    }
 
 /*==================== FOOTER ====================*/
 
@@ -211,7 +209,6 @@ section td{
     left: 0;
     right:0;
     z-index:auto;*/
-
 }
 
 
@@ -260,6 +257,23 @@ section td{
     transform: scale(1.2);
 }
 
+.mainHeader {
+    font-size: calc(3rem + 2vw);
+    font-weight: bold;
+    text-align: center;
+    background: -webkit-linear-gradient( right, #4bc7d2, #09ef11, #4bc7d2, #04953b, #09ef11, #04953b );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.secondaryHeader {
+    font-size: calc(1.5rem + 1.5vw);
+    font-weight: bold;
+    text-align: center;
+    background: -webkit-linear-gradient( right, #4bc7d2, #09ef11, #4bc7d2, #04953b, #09ef11, #04953b );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .fixed-button {
     position: fixed;
     bottom: 55vh;
@@ -279,15 +293,17 @@ section td{
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
-    transition: all .3s;
+    transition: all .5s;
     outline: none;
 }
 
     .fixed-button:hover {
-        outline: .5vw solid #fff;
+        outline: .5vw solid rgb(40, 180, 133);
+        outline-style:double;
         background-color: #fff;
         color: rgb(40, 180, 133);
         outline-offset: calc(.5rem + 1vw);
+        transform:rotate(90deg);
     }
 
 

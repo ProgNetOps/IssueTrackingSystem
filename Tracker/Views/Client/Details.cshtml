@@ -2,7 +2,7 @@
 
 <section class="text-primary">
     <input asp-for="@Model.Id" hidden />
-    <h2 class="text-center m-3 text-black">@Model.ClientName</h2>
+    <h2 class="m-3 secondaryHeader">@Model.ClientName</h2>
 
     <div class="form-group row m-2">
         <label asp-for="ClientRef" class="col-sm-4 col-form-label text-black">Client Reference Number</label>
@@ -17,10 +17,12 @@
             <input asp-for="ClientName" readonly class="text-black form-control" />
         </div>
     </div>
- 
-    <div class="row m-2">
 
-        
+    <hr class="m-3" />
+
+    <h2 class="m-3 secondaryHeader" style="">@Model.ClientName LINKS</h2>
+ 
+    <div class="row m-2">        
         <table class="table table-striped table-dark d-none d-md-block" style="max-width:100%">
             <thead>
                 <tr>
@@ -83,7 +85,7 @@
     </div>
     <div class="form-group row text-center m-3">
         <div class=" col-4 offset-4">
-            <a class="btn btn-warning" asp-controller="Client" asp-action="Index">Back</a>
+            <a class="btn btn-warning" asp-controller="Client" asp-action="Index">Back To Clients</a>
         </div>
     </div>
 

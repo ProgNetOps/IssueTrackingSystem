@@ -12,9 +12,27 @@ namespace Tracker.Controllers
             this.service = service;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            ViewData["Title"] = "Staff";
+
+            var employees = await service.GetAllAsync();
+            return View(employees);
+        }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            ViewData["Title"] = "Staff Details";
+
+            var employee =await service.GetByIdAsync(id);
+            if (employee!=null)
+            {
+                return View(employee);
+            }
+            else
+            {
+                return View(nameof(NotFound));
+            }
         }
     }
 }

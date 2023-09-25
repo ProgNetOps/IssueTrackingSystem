@@ -5,39 +5,39 @@
 <form method="get" asp-action="index">
 
 
-        <h1 class="m-3 text-center text-black">Customer Links</h1>
-
-        <div class=" p-3 mb-3" id="search-bar">
-            <div class="form-group" style="width:25%;">
+        <h1 class="m-3 mainHeader">Customer Links</h1>
+        
+        <div class=" p-2 mb-2" id="search-bar">
+            <div class="form-group mx-2" style="width:20%;">
                 <select class="form-control" name="searchBy">
-                    @* @foreach (var field in ViewBag.SearchFields)
+                    @foreach (var field in ViewBag.SearchFields)
                     {
-                    if (field.Key == ViewBag.CurrentSearchBy)
-                    {
-                    //To persist the value in the dropdown and prevent
-                    //selecting the first by default
-                    <option value="@field.Key" selected="selected">@field.Value</option>
+                        if (field.Key == ViewBag.currentSearchBy)
+                        {
+                            //To persist the value in the dropdown and prevent
+                            //selecting the first option by default
+                            <option value="@field.Key" selected="selected">@field.Value</option>
+                        }
+                        else
+                        {
+                            <option value="@field.Key">@field.Value</option>
+                        }
                     }
-                    else
-                    {
-                    <option value="@field.Key">@field.Value</option>
-                    }
-                    } *@
 
                 </select>
             </div>
-            <div class="form-group" style="width:50%">
-                <input name="searchString" type="search" class="form-control" placeholder="Search Term" value="@ViewBag.CurrentSearchString" />
+            <div class="form-group mx-2" style="width:30%">
+                <input name="searchString" type="search" class="form-control" placeholder="Search Term" value="@ViewBag.currentSearchString" />
             </div>
-            <div class="form-group" style="width:10%">
-                <button class="btn-primary form-control"><i class="fasfasearch"></    i></button>
+            <div class="form-group mx-2" style="width:10%">
+                <button class="btn-primary form-control"><i class="bi bi-search"></i></button>
             </div>
-            <div class="form-group" style="width:10%">
-                <a asp-controller="BTS" asp-action="Index" class="text-white" title="Clear All"><i class="fas fa-backspace"></i></a>
+            <div class="form-group mx-2" style="width:20%">
+                <a asp-controller="Client" asp-action="Index" title="Clear All">
+                    <i class="bi bi-backspace-fill"></i>
+                </a>
             </div>
         </div>
-
-
 
     <table class="table table-striped table-dark no-italics" style="max-width:100%">
         <thead>

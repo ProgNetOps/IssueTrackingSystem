@@ -90,6 +90,11 @@ namespace Tracker.Models.DTOs
 
         [Display(Name = "Technical Account Manager")]
         public string? TAM { get; set; }
+        //[StringLength(500,ErrorMessage ="Maximum character count is 500")]
+        //public string? ContactPersonsDetails { get; set; }
+        //public int MPLSPoPId { get; set; }
+        //[ForeignKey(nameof(MPLSPoPId))]
+        //public MPLSPoPDTO? MPLSPoP { get; set; }
 
     }
 }
