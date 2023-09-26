@@ -41,6 +41,7 @@ namespace Tracker.Services.Implementations
         public async override Task<Circuit?> GetByIdAsync(int id)
         {
             return await context.Circuits.
+                Include(q => q.TechnicalDetails).
                 Include(q => q.State).
                 Include(q => q.Client).
                 //Include(q => q.MPLSPoP).

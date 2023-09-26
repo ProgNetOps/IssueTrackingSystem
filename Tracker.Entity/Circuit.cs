@@ -92,9 +92,9 @@ namespace Tracker.Entity
         [StringLength(100)]
         public string? TAM { get; set; }
 
-        //public int CircuitTechnicalDetailsId { get; set; }
-        //[ForeignKey(nameof(CircuitTechnicalDetails))]
-        //public CircuitTechnicalDetails? TechnicalDetails { get; set; }
-        
+        public int CircuitTechnicalDetailsId { get; set; }
+        [ForeignKey(nameof(CircuitTechnicalDetails))]
+        public CircuitTechnicalDetails? TechnicalDetails { get; set; }
+
     }
 }

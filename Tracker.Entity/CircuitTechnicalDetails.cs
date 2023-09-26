@@ -27,9 +27,9 @@ namespace Tracker.Entity
         [StringLength(300)]
         public string? LastMileEquipmentSpecs { get; set; }
 
-        public int? BTSId { get; set; }
-        [ForeignKey(nameof(BTSId))]
-        public BTS? IPPoP { get; set; }
+        public int? IPPoPId { get; set; }
+        [ForeignKey(nameof(IPPoPId))]
+        public IPPoP? IPPoP { get; set; }
 
         public int? MPLSPoPId { get; set; }
         [ForeignKey(nameof(MPLSPoPId))]
@@ -47,7 +47,7 @@ namespace Tracker.Entity
         public string? Gateway { get; set; }
 
         [StringLength(50)]
-        public string? PoPRadioIP { get; set; }
+        public string? PopRadioIP { get; set; }
 
         [StringLength(50)]
         public string? ClientRadioIP { get; set; }

@@ -38,9 +38,9 @@ namespace Tracker.Entity
         /// <summary>
         /// Base station where switch is located
         /// </summary>
-        public int BTSId { get; set; }
-        [ForeignKey(nameof(BTSId))]
-        public BTS BTS { get; set; }
+        public int? IPPoPId { get; set; }
+        [ForeignKey(nameof(IPPoPId))]
+        public IPPoP? IPPoP { get; set; }
 
 
         /// <summary>

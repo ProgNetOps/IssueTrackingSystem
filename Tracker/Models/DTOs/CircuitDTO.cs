@@ -90,6 +90,10 @@ namespace Tracker.Models.DTOs
 
         [Display(Name = "Technical Account Manager")]
         public string? TAM { get; set; }
+
+        public int CircuitTechnicalDetailsId { get; set; }
+        [ForeignKey(nameof(CircuitTechnicalDetails))]
+        public CircuitTechnicalDetailsDTO? TechnicalDetails { get; set; }
         //[StringLength(500,ErrorMessage ="Maximum character count is 500")]
         //public string? ContactPersonsDetails { get; set; }
         //public int MPLSPoPId { get; set; }

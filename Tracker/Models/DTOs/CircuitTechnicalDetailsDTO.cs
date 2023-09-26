@@ -26,9 +26,9 @@ namespace Tracker.Models.DTOs
         public string? LastMileEquipmentSpecs { get; set; }
 
         [Display(Name = "IP PoP")]
-        public int? BTSId { get; set; }
-        [ForeignKey(nameof(BTSId))]
-        public BTS? IPPoP { get; set; }
+        public int? IPPoPId { get; set; }
+        [ForeignKey(nameof(IPPoPId))]
+        public IPPoP? IPPoP { get; set; }
 
 
         [Display(Name = "MPLS PoP")]
