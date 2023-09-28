@@ -77,7 +77,6 @@ namespace Tracker.Entity
 
         public string? ServiceType { get; set; }
 
-        public DateTime? JCCApprovedDate { get; set; }
 
         public double? AnnualRevenue { get; set; }
 
@@ -87,14 +86,50 @@ namespace Tracker.Entity
 
         [StringLength(100)]
         public string? AccountManager { get; set; }
+
         [StringLength(100)]
         public string? ProjectManager { get; set; }
+
         [StringLength(100)]
         public string? TAM { get; set; }
 
-        public int CircuitTechnicalDetailsId { get; set; }
-        [ForeignKey(nameof(CircuitTechnicalDetails))]
-        public CircuitTechnicalDetails? TechnicalDetails { get; set; }
+        [StringLength(50)]
+        public string? LastMileMedium { get; set; }
 
+        [StringLength(50)]
+        public string? LastMileEquipmentType { get; set; }
+
+        [StringLength(300)]
+        public string? LastMileEquipmentSpecs { get; set; }
+
+        public int? IPPoPId { get; set; }
+        [ForeignKey(nameof(IPPoPId))]
+        public IPPoP? IPPoP { get; set; }
+
+        public int? MPLSPoPId { get; set; }
+        [ForeignKey(nameof(MPLSPoPId))]
+        public MPLSPoP? MPLSPoP { get; set; }
+
+        [StringLength(200)]
+        public string? TransmissionPath { get; set; }
+
+        public double? PathLength { get; set; }
+
+        [StringLength(50)]
+        public string? RadioManagementVLAN
+        {
+            get; set;
+        }
+        [StringLength(50)]
+        public string? Gateway { get; set; }
+
+        [StringLength(50)]
+        public string? PopRadioIP { get; set; }
+
+        [StringLength(50)]
+        public string? ClientRadioIP { get; set; }
+
+        [StringLength(50)]
+        public string? ServiceStartDate { get; set; }
     }
 }

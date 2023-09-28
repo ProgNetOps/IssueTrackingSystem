@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Tracker.Entity;
 using Tracker.Models.DTOs;
+using Tracker.Persistence;
 using Tracker.Services.Services;
 
 namespace Tracker.Controllers
@@ -47,13 +48,19 @@ namespace Tracker.Controllers
         {
             ViewData["Title"] = "BTS";
 
-            var BaseStation = await service.GetByIdAsync(id);
-            var BaseStationDTO = mapper.Map<BTSDTO>(BaseStation);
-
-            return View(BaseStationDTO);
+            var baseStation = await service.GetByIdAsync(id);
+            if (baseStation != null)
+            {
+                var baseStationDTO = mapper.Map<BTSDTO>(baseStation);
+                return View(baseStationDTO);
+            }
+            else
+            {
+                return View(nameof(NotFound));
+            }
         }
 
-        public async Task<IActionResult> Create(BTSDTO model)
+        public async Task<IActionResult> Create(BTSCreateDTO model)
         {
             ViewData["Title"] = "New BTS";
 
@@ -61,11 +68,12 @@ namespace Tracker.Controllers
             {
                 var bTS = mapper.Map<BTS>(model);
                 await service.AddAsync(bTS);
+
                 return RedirectToAction(nameof(Index));
             }
             else
             {
-                return View("NotFound");
+                return View(model);
             }
 
         }

@@ -89,30 +89,87 @@
             <input asp-for="TAM" readonly class="text-black form-control" />
         </div>
     </div>
-    
     <div class="form-group row m-2">
-        <label asp-for="TechnicalDetails.JCCApprovalDate" class="col-sm-4 col-form-label text-black"></label>
+        <label asp-for="ServiceStartDate" class="col-sm-4 col-form-label text-black"></label>
         <div class="col-sm-8">
-            <input asp-for="TechnicalDetails.JCCApprovalDate" readonly class="text-black form-control" />
-        </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="TechnicalDetails.IPPoP.BTS.BTSName" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="TechnicalDetails.IPPoP.BTS.BTSName" readonly class="text-black form-control" />
+            <input asp-for="ServiceStartDate" readonly class="text-black form-control" />
         </div>
     </div>
 
-    @* <div class="form-group row m-2">
-        <label asp-for="ContactPersonsDetails" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <textarea asp-for="ContactPersonsDetails" readonly class="text-black form-control"></textarea>
+
+    <div class="bg-black p-3 h5 text-white">
+
+        <h2 class="secondaryHeader  m-3">Technical Information</h2>
+
+        <div class="form-group row m-2">
+            <label asp-for="LastMileMedium" class="col-sm-4 col-form-label"></label>
+            <div class="col-sm-8">
+                <input asp-for="LastMileMedium" readonly class="form-control text-black" />
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="LastMileEquipmentType" class="col-sm-4 col-form-label"></label>
+            <div class="col-sm-8">
+                <input asp-for="LastMileEquipmentType" readonly class="form-control text-black" />
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="LastMileEquipmentSpecs" class="col-sm-4 col-form-label"></label>
+            <div class="col-sm-8">
+                <input asp-for="LastMileEquipmentSpecs" readonly class="form-control text-black" />
+            </div>
+        </div><div class="form-group row m-2">
+            <label asp-for="IPPoP.BTS.BTSName" class="col-sm-4 col-form-label">IP PoP</label>
+            <div class="col-sm-8">
+                <input asp-for="IPPoP.BTS.BTSName" readonly class="form-control text-black" />
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="MPLSPoP.BTS.BTSName" class="col-sm-4 col-form-label">MPLS PoP</label>
+            <div class="col-sm-8">
+                <input asp-for="MPLSPoP.BTS.BTSName" readonly class="form-control text-black" />
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="TransmissionPath" class="col-sm-4 col-form-label"></label>
+            <div class="col-sm-8">
+                <input asp-for="TransmissionPath" readonly class="form-control text-black" />
+            </div>
+        </div><div class="form-group row m-2">
+            <label asp-for="PathLength" class="col-sm-4 col-form-label"></label>
+            <div class="col-sm-8">
+                <input asp-for="PathLength" readonly class="form-control text-black" />
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="RadioManagementVLAN" class="col-sm-4 col-form-label"></label>
+            <div class="col-sm-8">
+                <input asp-for="RadioManagementVLAN" readonly class="form-control text-black" />
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="Gateway" class="col-sm-4 col-form-label"></label>
+            <div class="col-sm-8">
+                <input asp-for="Gateway" readonly class="form-control text-black" />
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="PopRadioIP" class="col-sm-4 col-form-label"></label>
+            <div class="col-sm-8">
+                <input asp-for="PopRadioIP" readonly class="form-control text-black" />
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="ClientRadioIP" class="col-sm-4 col-form-label"></label>
+            <div class="col-sm-8">
+                <input asp-for="ClientRadioIP" readonly class="form-control text-black" />
+            </div>
         </div>
     </div>
-     *@
+
     <div class="form-group row text-center m-3">
         <div class=" col-4 offset-4">
-            <a class="btn btn-warning" asp-controller="Circuit" asp-action="Index">Back To Circuits</a>
+            <a class="btn btn-dark text-warning" asp-controller="Circuit" asp-action="Index">Back To Circuits</a>
         </div>
     </div>
 

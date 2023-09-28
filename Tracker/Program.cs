@@ -31,10 +31,14 @@ builder.Services.AddScoped<IMPLSPoPService, MPLSPoPService>();
 //Add Employee Service
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
-//Add CircuitTechnicalDetails Service
-builder.Services.AddScoped<ICircuitTechnicalDetailsService, CircuitTechnicalDetailsService>();
+//Add NetworkSwitch Service
+builder.Services.AddScoped<INetworkSwitchService, NetworkSwitchService>();
 
-//Add AutoMapper
+//Add IPPoP Service
+builder.Services.AddScoped<IIPPoPService, IPPoPService>();
+
+
+//
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 var app = builder.Build();
