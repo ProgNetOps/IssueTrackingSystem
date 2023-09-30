@@ -44,7 +44,9 @@ namespace Tracker.Services.Implementations
                 Include(q => q.State).
                 Include(q => q.Client).
                 Include(q => q.MPLSPoP).
+                ThenInclude(q => q.BTS).
                 Include(q => q.IPPoP).
+                ThenInclude(q => q.BTS).
                 FirstOrDefaultAsync(q => q.Id == id);
         }
 

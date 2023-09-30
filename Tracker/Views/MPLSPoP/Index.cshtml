@@ -9,24 +9,18 @@
     }
     else
     {
-        <table class="table table-striped table-dark d-none d-md-block  no-italics" style="max-width:100%">
+        <table class="table table-striped table-dark d-none d-md-block  no-italics" style="max-width:100%;width:100%;">
 
             <thead>
                 <tr>
-                    <th class="text-center " style="width:5%">S/N</th>
-                    <th class="text-center " style="width:15%">
+                    <th class="text-center " style="width:10%">S/N</th>
+                    <th class="text-center " style="width:35%">
                         <a class="text-white" asp-action="index">Base Station</a>
                     </th>
-                    <th class="text-center" style="width:20%">
+                    <th class="text-center" style="width:35%">
                         <a class="text-white" asp-action="index">NE NAME</a>
                     </th>
-                    <th class="text-center" style="width:20%">
-                        <a class="text-white" asp-action="index">NE TYPE</a>
-                    </th>
-                    <th class="text-center" style="width:25%">
-                        <a class="text-white" asp-action="index">NE IP ADDRESS</a>
-                    </th>
-                    <th class="text-center" style="width:15%">ACTION</th>
+                    <th class="text-center" style="width:20%">ACTION</th>
                 </tr>
             </thead>
 
@@ -38,15 +32,12 @@
                 {
                     counter = counter + 1;
                     <tr>
-                        <td style="width:5%;" class="text-left text-white">@counter</td>
-                        <td style="width:15%;" class="text-center text-warning">
+                        <td style="width:10%;" class="text-left text-white">@counter</td>
+                        <td style="width:35%;" class="text-center text-warning">
                             <a asp-controller="bts" asp-action="details" asp-route-id="@item?.BTSId">@item?.BTS?.BTSName</a>
                         </td>
-                        <td style="width:20%;" class="text-left text-warning">@item?.NEName</td>
-                        <td style="width:20%;" class="text-left text-warning">@item?.NEType</td>
-                        <td style="width:25%;" class="text-center text-warning"> @item?.NEIpAddress </td>
-                                                
-                        <td style="width:15%; font-size: 2em;">
+                        <td style="width:35%;" class="text-left text-warning">@item?.NEName</td>
+                        <td style="width:20%; font-size: 2em;">
                             <div class="bts-action-buttons" style="display:flex; justify-content:space-around; align-items:center;">
                                 <a asp-controller="MPLSPoP" asp-action="Edit" class="text-primary bts-icon-button"><i class="bi bi-pencil-square"></i></a>
                                 <a style="text-decoration:none;cursor:pointer;color:#fff;" asp-controller="MPLSPoP" asp-action="Details" asp-route-id="@item?.Id"><i class="bi bi-eye-fill"></i></a>

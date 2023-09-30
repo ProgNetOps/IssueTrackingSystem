@@ -131,5 +131,7 @@ namespace Tracker.Entity
 
         [StringLength(50)]
         public string? ServiceStartDate { get; set; }
+        [StringLength(1000)]
+        public string? ClientContactDetails { get; set; }
     }
 }

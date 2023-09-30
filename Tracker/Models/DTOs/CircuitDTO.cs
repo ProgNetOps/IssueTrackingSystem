@@ -139,5 +139,9 @@ namespace Tracker.Models.DTOs
         [Display(Name = "Service Start Date")]
         public string? ServiceStartDate { get; set; }
 
+        [StringLength(1000)]
+        [Display(Name = "Contact Persons' Details")]
+        public string? ClientContactDetails { get; set; }
+
     }
 }

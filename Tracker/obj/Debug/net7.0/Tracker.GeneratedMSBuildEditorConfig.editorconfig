@@ -52,12 +52,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Repository/IssueTrackingSystem/Tracker/Views/IPPoP/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVBQb1BcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/IPPoP/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVBQb1BcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Repository/IssueTrackingSystem/Tracker/Views/MPLSPoP/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTVBMU1BvUFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/MPLSPoP/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTVBMU1BvUFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/NetworkSwitch/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV0d29ya1N3aXRjaFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/NetworkSwitch/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV0d29ya1N3aXRjaFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/Shared/Error.cshtml]

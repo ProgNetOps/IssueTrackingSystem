@@ -1,16 +1,16 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Tracker.Models.DTOs;
-using Tracker.Services.Implementations;
+using Tracker.Services.Services;
 
 namespace Tracker.Controllers
 {
     public class IPPoPController : Controller
     {
-        private readonly IPPoPService service;
+        private readonly IIPPoPService service;
         private readonly IMapper mapper;
 
-        public IPPoPController(IPPoPService service, IMapper mapper)
+        public IPPoPController(IIPPoPService service, IMapper mapper)
         {
             this.service = service;
             this.mapper = mapper;

@@ -38,7 +38,7 @@ builder.Services.AddScoped<INetworkSwitchService, NetworkSwitchService>();
 builder.Services.AddScoped<IIPPoPService, IPPoPService>();
 
 
-//
+//Automapper 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 var app = builder.Build();

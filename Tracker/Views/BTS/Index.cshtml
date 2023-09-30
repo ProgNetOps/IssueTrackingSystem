@@ -44,20 +44,18 @@
 
                 <thead>
                     <tr>
-                        <th class="text-center " style="width:5%">S/N</th>
-                        <th class="text-center " style="width:10%">
+                        <th class="text-left " style="width:10%">S/N</th>
+                        <th class="text-center " style="width:15%">
                                 <a class="text-white" asp-action="index">BTS</a>
                         </th>
-                        <th class="text-center" style="width:15%">
-                            <a class="text-white" asp-action="index">STATE</a>
-                        </th>
-                        <th class="text-center" style="width:15%">
-                            <a class="text-white" asp-action="index">REGION</a>
-                        </th>
-                        <th class="text-center" style="width:40%">
+                        
+                        <th class="text-center" style="width:35%">
                                 <a class="text-white" asp-action="index">ADDRESS</a>
                         </th>
-                        <th class="text-center" style="width:15%">ACTION</th>
+                        <th class="text-center" style="width:20%">
+                            <a class="text-white" asp-action="index">STATE</a>
+                        </th>
+                        <th class="text-center" style="width:20%">ACTION</th>
                     </tr>
                 </thead>
 
@@ -69,12 +67,11 @@
                     {
                     counter = counter + 1;
                     <tr>
-                        <td style="width:5%;" class="text-left text-white">@counter</td>
+                        <td style="width:10%;" class="text-left text-white">@counter</td>
                         <td style="width:10%;" class="text-center text-warning">@item?.BTSName</td>
-                        <td style="width:15%;" class="text-center text-warning"> @item?.State.StateName </td>
-                        <td style="width:15%;" class="text-center text-warning"> @item?.State?.Region?.RegionName </td>
-                        <td style="width:40%;" class="text-left text-warning">@item?.LocationAddress</td>
-                        <td style="width:15%; font-size: 2em;">
+                    <td style="width:40%;" class="text-left text-warning">@item?.LocationAddress</td>
+                        <td style="width:20%;" class="text-center text-warning"> @item?.State.StateName </td>                        
+                        <td style="width:20%; font-size: 2em;">
                             <div class="bts-action-buttons" style="display:flex; justify-content:space-around; align-items:center;">
                                 <a asp-controller="BTS" asp-action="Edit" class="text-primary bts-icon-button"><i class="bi bi-pencil-square"></i></a>
                                 <a style="text-decoration:none;cursor:pointer;color:#fff;" asp-controller="BTS" asp-action="Details" asp-route-id="@item?.Id"><i class="bi bi-eye-fill"></i></a>
