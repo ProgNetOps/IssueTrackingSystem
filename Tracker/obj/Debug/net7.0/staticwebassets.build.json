@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BfHrLVtkBaVeYULGYaPisQ35HFDzaBrPvOtqu8wx5VQ=",
+  "Hash": "xcc/7OkN7/yfEqMIMrYVmqEQmmL4R+nYnxR+ATKN7EE=",
   "Source": "Tracker",
   "BasePath": "_content/Tracker",
   "Mode": "Default",
@@ -185,6 +185,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\NoImage.jpg"
+    },
+    {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\router.svg",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "images/router.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\router.svg"
+    },
+    {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\switch.svg",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "images/switch.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\switch.svg"
     },
     {
       "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\js\\site.js",

@@ -15,6 +15,7 @@ namespace Tracker.Services.Implementations
     public class BaseStationService: SQLBaseRepository<BTS>, IBaseStationService
     {
         private readonly AppDbContext context;
+        IEnumerable<BTS>? totalResultSet;
 
         public BaseStationService(AppDbContext context):base(context)
         {
@@ -49,8 +50,6 @@ namespace Tracker.Services.Implementations
                 filteredResult = filteredResult.Take(50).AsQueryable();
             }
 
-
-
             //Filtering
             if (string.IsNullOrWhiteSpace(filterOn) == false && string.IsNullOrWhiteSpace(filterQuery) == false)
             {
@@ -66,17 +65,15 @@ namespace Tracker.Services.Implementations
                 {
                     filteredResult = filteredResult.Where(q => q.State.StateName.Contains(filterQuery));
                 }
-                else if (filterOn.Equals(nameof(BTS.State.Region.RegionName), StringComparison.OrdinalIgnoreCase))
-                {
-                    filteredResult = filteredResult.Where(q => q.State.Region.RegionName.Contains(filterQuery));
-                }
             }
+
 
             //Pagination
             var skipResults = (pageNumber - 1) * pageSize;
 
             return await filteredResult.Skip(skipResults).Take(pageSize).ToListAsync();
         }
+
 
     }
 }

@@ -1,32 +1,45 @@
-﻿@model IEnumerable<Employee>
+﻿@model IEnumerable<Employee>?
 
-<section class="album">
-    <h1 class="m-3 mainHeader">ALL STAFF</h1>
-    @if(Model.Count() == 0)
+<section class="text-black">
+
+    <h1 class="m-3 mainHeaderDetails" style="font-size: calc(2.5rem + 3vw);">STAFF MANAGEMENT</h1>
+
+    @if (Model?.Count() == 0)
     {
-        <div>
-            No employee to display
-        </div>
+        <p class="text-center">
+            Nothing to display
+        </p>
     }
     else
-    {
-    
-        @foreach (var employee in Model)
-        {
-            <div class="photo">
-                <div class="imgBox">
-                    <img src="" />
+    {       
+        <section class="album">
+            @foreach (var person in Model)
+            {
+                <div class="photo">
+                    <div class="imgBox">
+                        <img src="/images/NoImage.jpg" />
+                    </div>
+                    <div class="details">
+                        <h2>@person.SurName @person.FirstName</h2>
+                        <div>
+                            <span>@person.Unit</span> <br>
+                            <span>@person.Email</span> <br>
+                            <br><br><br><br><br>
+                            <div style="display:flex; flex-direction:row; gap:3px; align-items:center; justify-content:center;">
+                                <div>
+                                    <a class="btn btn-primary " asp-controller="Employee" asp-action="Details" asp-route-id="">View</a>
+                                </div>
+                                <div>
+                                    <a class="btn btn-outline-primary" asp-controller="Employee" asp-action="Edit" asp-route-id="">Edit</a>
+                                </div>
+                                <div>
+                                    <a class="btn btn-danger" asp-controller="Employee" asp-action="Delete" asp-route-id="">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="details">
-                    <h2>lorem Ipsor Doloe</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
-                        necessitatibus. Minima, eius culpa delectus nobis repellendus ut
-                        quis quidem voluptatem itaque neque est quia corporis sunt magni
-                    </p>
-                </div>
-            </div>
-        }
+            }
+        </section>
     }
-    
 </section>

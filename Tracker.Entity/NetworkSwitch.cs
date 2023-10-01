@@ -18,14 +18,12 @@ namespace Tracker.Entity
         [Key]
         public int Id { get; set; }
 
-
         /// <summary>
         /// Name of switch
         /// </summary>
         [Required]
         [StringLength(30)]
         public string? SwitchName { get; set; }
-
 
         /// <summary>
         /// Switch IP for telnet sessions
@@ -34,7 +32,6 @@ namespace Tracker.Entity
         [StringLength(30)]
         public string? SwitchIP { get; set; }
 
-
         /// <summary>
         /// Base station where switch is located
         /// </summary>
@@ -42,19 +39,16 @@ namespace Tracker.Entity
         [ForeignKey(nameof(IPPoPId))]
         public IPPoP? IPPoP { get; set; }
 
-
         /// <summary>
         /// The backup configuration of the switch
         /// </summary>
-        [StringLength(5000)]
+        [StringLength(7000)]
         public string? ConfigBackup { get; set; }
-
 
         /// <summary>
         /// Last date of switch config backup
         /// </summary>
         public DateTime? DateOfLastBackup { get; set; }
-
 
         /*//FOR LATER
         /// <summary>

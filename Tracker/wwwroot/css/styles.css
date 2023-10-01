@@ -291,7 +291,7 @@ section {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(top, #ffb900, #ffb900, #ffb900, #fff, #04953b, #04953b, #04953b );
+    background: -webkit-linear-gradient(top, #ffb900, #ffb900, #ffb900, #04953b, #04953b, #04953b );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: translateY(-50%);
@@ -406,7 +406,6 @@ section {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
 
     header {
         width: 100%;

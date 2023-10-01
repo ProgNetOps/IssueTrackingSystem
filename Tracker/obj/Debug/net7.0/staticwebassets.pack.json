@@ -37,6 +37,14 @@
       "PackagePath": "staticwebassets\\images\\NoImage.jpg"
     },
     {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\router.svg",
+      "PackagePath": "staticwebassets\\images\\router.svg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\switch.svg",
+      "PackagePath": "staticwebassets\\images\\switch.svg"
+    },
+    {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

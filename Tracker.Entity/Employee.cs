@@ -28,7 +28,6 @@ namespace Tracker.Entity
         [Display(Name = "Surname")]
         public string? SurName { get; set; }
 
-
         /// <summary>
         /// First Name of Glo staff
         /// </summary>
@@ -37,23 +36,10 @@ namespace Tracker.Entity
         [Display(Name = "First Name")]
         public string? FirstName { get; set; }
 
-
         /// <summary>
-        /// Official phone number of Glo staff
+        /// Department/Unit
         /// </summary>
-        /// <summary>
-        [Required(ErrorMessage = "Official number is required")]
-        [RegularExpression(@"^(0805557)[0-9]{4}$", ErrorMessage = "Invalid staff number")]
-        [Display(Name = "Phone")]
-        public string? StaffPhone { get; set; }
-
-
-        /// <summary>
-        /// Staff ID of Glo staff
-        /// </summary>
-        [Required(ErrorMessage ="staff id is required")]
-        public int StaffId { get; set; }
-
+        public string? Unit { get; set; }
 
         /// <summary>
         /// Official email address of Glo staff
@@ -64,26 +50,37 @@ namespace Tracker.Entity
         [EmailAddress]
         public string? Email { get; set; }
 
-        /// <summary>
-        /// Department/Unit
-        /// </summary>
-        public string? Unit { get; set; }
-
-        /// <summary>
-        /// State of residence
-        /// </summary>
-        public int StateId { get; set; }
-        [ForeignKey(nameof(StateId))]
-        public State State { get; set; }
-
-        public string? Gender { get; set; }
-
         public string? photoPath { get; set; }
 
-        /// <summary>
-        /// Shows staff is still in company's employ
-        /// </summary>
-        public bool IsStillEmployee { get; set; } = true;
+        ///// <summary>
+        ///// Official phone number of Glo staff
+        ///// </summary>
+        ///// <summary>
+        //[Required(ErrorMessage = "Official number is required")]
+        //[RegularExpression(@"^(0805557)[0-9]{4}$", ErrorMessage = "Invalid staff number")]
+        //[Display(Name = "Phone")]
+        //public string? StaffPhone { get; set; }
+
+        ///// <summary>
+        ///// Staff ID of Glo staff
+        ///// </summary>
+        //[Required(ErrorMessage = "staff id is required")]
+        //public int StaffId { get; set; }
+
+        ///// <summary>
+        ///// State of residence
+        ///// </summary>
+        //public int StateId { get; set; }
+        //[ForeignKey(nameof(StateId))]
+        //public State State { get; set; }
+
+        //public string? Gender { get; set; }
+
+
+        ///// <summary>
+        ///// Shows staff is still in company's employ
+        ///// </summary>
+        //public bool IsStillEmployee { get; set; } = true;
 
         #endregion
     }

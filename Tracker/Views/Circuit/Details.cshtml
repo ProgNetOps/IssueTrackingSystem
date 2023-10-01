@@ -10,90 +10,93 @@
     <input asp-for="@Model.Id" hidden />
     <h2 class="m-3 mainHeaderDetails">@Model.CircuitName</h2>
 
-    <div class="form-group row m-2">
-        <label asp-for="CircuitRef" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="CircuitRef" readonly class="text-black form-control" />
+    <div >
+        <div class="form-group row m-2">
+            <label asp-for="CircuitRef" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="CircuitRef" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="CircuitName" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="CircuitName" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="CircuitName" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="CircuitName" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="Client.ClientName" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="Client.ClientName" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="Client.ClientName" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="Client.ClientName" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="Address" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="Address" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="Address" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="Address" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="Bandwidth" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="Bandwidth" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="Bandwidth" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="Bandwidth" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="ServiceType" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="ServiceType" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="ServiceType" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="ServiceType" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="AnnualRevenue" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="AnnualRevenue" readonly class="text-black form-control" value="@annualRevenue">
+        <div class="form-group row m-2">
+            <label asp-for="AnnualRevenue" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="AnnualRevenue" readonly class="text-black form-control" value="@annualRevenue">
+            </div>
         </div>
-    </div>
 
-    <div class="form-group row m-2">
-        <label asp-for="Coordinates" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="Coordinates" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="Coordinates" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="Coordinates" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="Town" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="Town" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="Town" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="Town" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="State.StateName" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="State.StateName" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="State.StateName" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="State.StateName" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="AccountManager" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="AccountManager" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="AccountManager" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="AccountManager" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="ProjectManager" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="ProjectManager" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="ProjectManager" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="ProjectManager" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="TAM" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="TAM" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="TAM" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="TAM" readonly class="text-black form-control" />
+            </div>
         </div>
-    </div>
-    <div class="form-group row m-2">
-        <label asp-for="ServiceStartDate" class="col-sm-4 col-form-label text-black"></label>
-        <div class="col-sm-8">
-            <input asp-for="ServiceStartDate" readonly class="text-black form-control" />
+        <div class="form-group row m-2">
+            <label asp-for="ServiceStartDate" class="col-sm-4 col-form-label text-black"></label>
+            <div class="col-sm-8">
+                <input asp-for="ServiceStartDate" readonly class="text-black form-control" />
+            </div>
         </div>
+
     </div>
 
     <div class="bg-black p-3 h5 text-white">
@@ -117,25 +120,38 @@
             <div class="col-sm-8">
                 <input asp-for="LastMileEquipmentSpecs" readonly class="form-control text-black" />
             </div>
-        </div><div class="form-group row m-2">
-            <label asp-for="IPPoP.BTS.BTSName" class="col-sm-4 col-form-label">IP PoP</label>
-            <div class="col-sm-8">
-                <span style="display:inline-block; width:25%;" class="text-center text-warning">
-                    <a asp-controller="IPPoP" asp-action="details" asp-route-id="@Model.IPPoPId"><i class="bi bi-box-arrow-up-right"></i></a>
-                </span>
-                <input style="display:inline-block; width:70%;" asp-for="IPPoP.BTS.BTSName" readonly class="form-control text-black" />
-            </div>
         </div>
-        <div class="form-group row m-2">
-            <label asp-for="MPLSPoP.BTS.BTSName" class="col-sm-4 col-form-label">MPLS PoP</label>
-            <div class="col-sm-8">
-                <span style="display:inline-block; width:25%;" class="text-center text-warning">
-                    <a asp-controller="MPLSPoP" asp-action="details" asp-route-id="@Model.MPLSPoPId"><i class="bi bi-box-arrow-up-right"></i></a>
-                </span>
-                
-                <input style="display:inline-block; width:70%;" asp-for="MPLSPoP.BTS.BTSName" readonly class="form-control text-black" />
+
+        
+
+        @if (Model.IPPoP != null)
+        {
+            <div class="form-group row m-2">
+                <label asp-for="IPPoP.BTS.BTSName" class="col-sm-4 col-form-label">IP PoP</label>
+                <div class="col-sm-8">
+                    <input style="display:inline-block; width:75%;" asp-for="IPPoP.BTS.BTSName" readonly class="form-control text-black" />
+                    <span class="text-center text-warning">
+                        <a asp-controller="IPPoP" asp-action="details" asp-route-id="@Model.IPPoPId" target="_blank"><img style="height:2.5rem;width:auto;" src="/images/switch.svg" /></a>
+                    </span>
+                </div>
             </div>
-        </div>
+
+        }
+        
+        @if(Model.MPLSPoP != null)
+        {
+            <div class="form-group row m-2">
+                <label asp-for="MPLSPoP.BTS.BTSName" class="col-sm-4 col-form-label">MPLS PoP</label>
+                <div class="col-sm-8">
+                    <input style="display:inline-block; width:75%;" asp-for="MPLSPoP.BTS.BTSName" readonly class="form-control text-black" />
+                    <span class="text-center text-warning">
+                        <a asp-controller="BTS" asp-action="details" asp-route-id="@Model.MPLSPoP.BTSId" target="_blank"><img style="height:2.5rem;width:auto;" src="/images/router.svg" /></a>
+                    </span>
+                </div>
+            </div>
+        }
+
+
         <div class="form-group row m-2">
             <label asp-for="TransmissionPath" class="col-sm-4 col-form-label"></label>
             <div class="col-sm-8">

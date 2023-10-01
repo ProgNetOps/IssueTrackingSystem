@@ -27,11 +27,8 @@ namespace Tracker.Controllers
             {
                 { nameof(BTSDTO.BTSName), "Site Id" },
                 { nameof(BTSDTO.LocationAddress), "Address" },
-                { nameof(BTSDTO.State.StateName), "State" },
-                { nameof(BTSDTO.State.Region.RegionName), "Region" }
+                { nameof(BTSDTO.State.StateName), "State" }
             };
-
-            
 
             var BaseStations = await service.GetFilteredResultAsync(searchBy, searchString, pageNumber, pageSize);
 
