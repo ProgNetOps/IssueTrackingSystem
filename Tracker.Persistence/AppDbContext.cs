@@ -44,6 +44,5 @@ namespace Tracker.Persistence
         public DbSet<Employee> Employees { get; set; }
         public DbSet<IPPoP> IPPoPs { get; set; }
 
-
     }
 }

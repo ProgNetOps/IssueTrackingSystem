@@ -15,25 +15,28 @@
         <section class="album">
             @foreach (var person in Model)
             {
+                string photoPath = "~/images/" + (person.PhotoPath ?? "NoImage.jpg");
+
                 <div class="photo">
                     <div class="imgBox">
-                        <img src="/images/NoImage.jpg" />
+                        <img style="height:auto;width:100%;" src="@photoPath" asp-append-version="true" />
                     </div>
                     <div class="details">
                         <h2>@person.SurName @person.FirstName</h2>
                         <div>
                             <span>@person.Unit</span> <br>
                             <span>@person.Email</span> <br>
-                            <br><br><br><br><br>
+                            <br><br><br><br><br><br><br><br><br>
+                            
                             <div style="display:flex; flex-direction:row; gap:3px; align-items:center; justify-content:center;">
                                 <div>
-                                    <a class="btn btn-primary " asp-controller="Employee" asp-action="Details" asp-route-id="">View</a>
+                                    <a class="btn btn-primary" asp-controller="Employee" asp-action="Details" asp-route-id="@person.Id">View</a>
                                 </div>
                                 <div>
-                                    <a class="btn btn-outline-primary" asp-controller="Employee" asp-action="Edit" asp-route-id="">Edit</a>
+                                    <a class="btn btn-warning text-secondary" asp-controller="Employee" asp-action="Edit" asp-route-id="@person.Id">Edit</a>
                                 </div>
                                 <div>
-                                    <a class="btn btn-danger" asp-controller="Employee" asp-action="Delete" asp-route-id="">Delete</a>
+                                    <a class="btn btn-danger" asp-controller="Employee" asp-action="Delete" asp-route-id="@person.Id">Delete</a>
                                 </div>
                             </div>
                         </div>

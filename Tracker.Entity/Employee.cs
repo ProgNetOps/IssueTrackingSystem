@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Tracker.Entity.Contract;
+using Tracker.Entity.Enums;
 
 namespace Tracker.Entity
 {
@@ -31,7 +32,7 @@ namespace Tracker.Entity
         /// <summary>
         /// First Name of Glo staff
         /// </summary>
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Surname is required")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "First Name is required")]
         [StringLength(25, ErrorMessage = "Maximum character count of 25 is exceeded")]
         [Display(Name = "First Name")]
         public string? FirstName { get; set; }
@@ -39,7 +40,9 @@ namespace Tracker.Entity
         /// <summary>
         /// Department/Unit
         /// </summary>
-        public string? Unit { get; set; }
+        [Display(Name = "Department/Unit")]
+        [Required(ErrorMessage ="Department/Unit is required")]
+        public Unit? Unit { get; set; }
 
         /// <summary>
         /// Official email address of Glo staff
@@ -50,7 +53,7 @@ namespace Tracker.Entity
         [EmailAddress]
         public string? Email { get; set; }
 
-        public string? photoPath { get; set; }
+        public string? PhotoPath { get; set; }
 
         ///// <summary>
         ///// Official phone number of Glo staff
