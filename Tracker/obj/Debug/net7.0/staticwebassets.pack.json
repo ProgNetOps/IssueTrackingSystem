@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\PhotoStyle.css"
     },
     {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\asideStyle.css",
+      "PackagePath": "staticwebassets\\css\\asideStyle.css"
+    },
+    {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
@@ -35,6 +39,14 @@
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\NoImage.jpg",
       "PackagePath": "staticwebassets\\images\\NoImage.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\abc8b7c5-fadf-4e27-bc8f-3535d1167030_lionhead.jpg",
+      "PackagePath": "staticwebassets\\images\\abc8b7c5-fadf-4e27-bc8f-3535d1167030_lionhead.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\e4d9f2e2-2efc-41b2-825d-8f1e0b74c840_Story.jpg",
+      "PackagePath": "staticwebassets\\images\\e4d9f2e2-2efc-41b2-825d-8f1e0b74c840_Story.jpg"
     },
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\router.svg",

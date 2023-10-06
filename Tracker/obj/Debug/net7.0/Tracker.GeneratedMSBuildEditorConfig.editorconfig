@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Employee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Repository/IssueTrackingSystem/Tracker/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,6 +82,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/NetworkSwitch/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV0d29ya1N3aXRjaFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/ServiceManagement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU1hbmFnZW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/ServiceManagement/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZU1hbmFnZW1lbnRcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/Shared/Error.cshtml]

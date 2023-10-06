@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xcc/7OkN7/yfEqMIMrYVmqEQmmL4R+nYnxR+ATKN7EE=",
+  "Hash": "YAPL/9Yyw1lnrNHN5dgMRjhU+cvKgUir1CeCI7fpH+Y=",
   "Source": "Tracker",
   "BasePath": "_content/Tracker",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\city.jpg"
+    },
+    {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\asideStyle.css",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "css/asideStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\asideStyle.css"
     },
     {
       "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\CustomStyle.css",
@@ -168,6 +185,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\glo_smaller.png"
+    },
+    {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\abc8b7c5-fadf-4e27-bc8f-3535d1167030_lionhead.jpg",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "images/abc8b7c5-fadf-4e27-bc8f-3535d1167030_lionhead.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\abc8b7c5-fadf-4e27-bc8f-3535d1167030_lionhead.jpg"
+    },
+    {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\e4d9f2e2-2efc-41b2-825d-8f1e0b74c840_Story.jpg",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "images/e4d9f2e2-2efc-41b2-825d-8f1e0b74c840_Story.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\e4d9f2e2-2efc-41b2-825d-8f1e0b74c840_Story.jpg"
     },
     {
       "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\NoImage.jpg",

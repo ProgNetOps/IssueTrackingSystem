@@ -6,40 +6,12 @@ using Tracker.Mappings;
 using Tracker.Persistence;
 using Tracker.Services.Implementations;
 using Tracker.Services.Services;
+using Tracker.ServicesExtension;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add MVC services
-builder.Services.AddControllersWithViews();
 
-//Add DbContext Services 
-builder.Services.AddDbContextPool<AppDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-//Add BTS Service
-builder.Services.AddScoped<IBaseStationService, BaseStationService>();
-
-//Add Client Service
-builder.Services.AddScoped<IClientService, ClientService>();
-
-//Add Circuit Service
-builder.Services.AddScoped<ICircuitService, CircuitService>();
-
-//Add MPLSPoP Service
-builder.Services.AddScoped<IMPLSPoPService, MPLSPoPService>();
-
-//Add Employee Service
-builder.Services.AddScoped<IEmployeeService, EmployeeService>();
-
-//Add NetworkSwitch Service
-builder.Services.AddScoped<INetworkSwitchService, NetworkSwitchService>();
-
-//Add IPPoP Service
-builder.Services.AddScoped<IIPPoPService, IPPoPService>();
-
-
-//Automapper 
-builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
+builder.Services.ConfigureServices(builder.Configuration);
 
 var app = builder.Build();
 

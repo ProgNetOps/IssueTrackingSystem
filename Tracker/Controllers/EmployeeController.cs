@@ -28,8 +28,8 @@ namespace Tracker.Controllers
         {
             ViewData["Title"] = "Staff Details";
 
-            var employee =await service.GetByIdAsync(id);
-            if (employee!=null)
+            var employee = await service.GetByIdAsync(id);
+            if (employee != null)
             {
                 return View(employee);
             }
@@ -49,19 +49,11 @@ namespace Tracker.Controllers
         public async Task<IActionResult> Create(EmployeeCreateViewModel? model)
         {
             ViewData["Title"] = "Create Employee";
-            
+
 
             if (ModelState.IsValid)
             {
-                string uniqueFilename = null;
-
-                if (model.Photo != null)
-                {
-                    string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
-                    uniqueFilename = $"{Guid.NewGuid().ToString()}_{model.Photo.FileName}";
-                    string filePath = Path.Combine(uploadsFolder, uniqueFilename);
-                    model.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
-                }
+                string uniqueFilename = ProcessUploadedFile(model);
 
                 Employee newEmployee = new Employee
                 {
@@ -84,5 +76,79 @@ namespace Tracker.Controllers
             }
 
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            Employee employee = await service.GetByIdAsync(id);
+            EmployeeEditViewModel employeeEditViewModel = new EmployeeEditViewModel
+            {
+                Id = employee.Id,
+                FirstName = employee.FirstName,
+                SurName = employee.SurName,
+                Email = employee.Email,
+                Unit = employee.Unit,
+                ExistingPhotoPath = employee.PhotoPath
+            };
+
+            return View(employeeEditViewModel);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(EmployeeEditViewModel? model)
+        {
+            ViewData["Title"] = "Edit Employee";
+
+
+            if (ModelState.IsValid)
+            {
+                Employee employee = await service.GetByIdAsync(model.Id);
+                employee.SurName = model.SurName;
+                employee.FirstName = model.FirstName;
+                employee.Email = model.Email;
+                employee.Unit = model.Unit;
+                if(model.Photo != null)
+				{
+                    //Delete old photo and replace with new
+                    if (model.ExistingPhotoPath != null)
+                    {
+                        string filePath = Path.Combine(webHostEnvironment.WebRootPath, "images", model.ExistingPhotoPath);
+                        System.IO.File.Delete(filePath);
+                    }
+					employee.PhotoPath = ProcessUploadedFile(model);
+				}
+
+                await service.UpdateAsync(employee);
+
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(model);
+            }
+
+        }
+
+		//The parameter type is a parent class of EmployeeEditViewModel, so any of the 2 types can be safely passed as argument
+		private string ProcessUploadedFile(EmployeeCreateViewModel? model)
+        {
+            string uniqueFilename = null;
+
+            if (model.Photo != null)
+            {
+                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
+                uniqueFilename = $"{Guid.NewGuid().ToString()}_{model.Photo.FileName}";
+                string filePath = Path.Combine(uploadsFolder, uniqueFilename);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.Photo.CopyTo(fileStream);
+                }
+            }
+
+            return uniqueFilename;
+        }
+
     }
 }

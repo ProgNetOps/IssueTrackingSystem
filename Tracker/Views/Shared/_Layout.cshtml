@@ -17,6 +17,7 @@
     <link rel="icon" href="~/glo_smaller.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="~/css/photostyle.css" />
+	<link href="~/css/asidestyle.css" rel="stylesheet" />
 </head>
 <body>
     <header class="header" id="header">
@@ -67,6 +68,85 @@
                 </div>            
         </nav>
     </header>
+
+    <aside class="sidebar">
+        <ul>
+            <li class="profilePic">
+                <a href="#">
+                    <span class="icon">
+                        <div class="profileImg"><img src="/lionhead.jpg" alt=""></div>
+                    </span>
+                    <span class="text">First Name</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="bi bi-house"></i>
+
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="bi bi-chat"></i>
+                    </span>
+                    <span class="text">Notification</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </span>
+                    <span class="text">Analytics</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Employee" asp-action="Index">
+                    <span class="icon">
+                        <i class="bi bi-people-fill"></i>
+                    </span>
+                    <span class="text">Staff Mgt</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="bi bi-headset"></i>
+                    </span>
+                    <span class="text">Service Mgt</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Servicemanagement" asp-action="Index">
+                    <span class="icon">
+                        <i class="bi bi-table"></i>
+                    </span>
+                    <span class="text">Ticketing Sys</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="BTS" asp-action="Index">
+                    <span class="icon">
+                        &#128508;
+                    </span>
+                    <span class="text">Base Station</span>
+                </a>
+            </li>
+                <li class="bottom">
+                    <a href="#">
+                        <span class="icon">
+                            <i class="bi bi-box-arrow-right"></i>
+                        </span>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </span>
+        </ul>
+    </aside>
 
     <div class="content-container">
         <main role="main">
