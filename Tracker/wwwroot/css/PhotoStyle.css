@@ -20,7 +20,7 @@
     margin: 20px 0;
     width: 300px;
     height: 400px;
-    background: #fff;
+    background: green;
     transform-style: preserve-3d;
     transform: perspective(2000px);
     transition: 1s;
@@ -48,6 +48,7 @@
 
     .photo:hover .imgBox {
         transform: rotateY(-135deg);
+        height: auto; /*To be adjusted on small screens*/
     }
 
     .photo .imgBox .img {

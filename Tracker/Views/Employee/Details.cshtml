@@ -6,12 +6,12 @@
 
 <section>	
     <input asp-for="@Model.Id" hidden />
-	<h2 class="m-3 secondaryHeader">@Model.SurName @Model.FirstName</h2>
+	<h2 class="m-3 text-white">@Model.SurName @Model.FirstName</h2>
 
 
 
     <div class="form-group row m-2">
-        <label asp-for="PhotoPath" class="col-sm-4 col-form-label text-black"></label>
+        <label asp-for="PhotoPath" class="col-sm-4 col-form-label text-white"></label>
         <div class="col-sm-8">
             <img src="@photoPath" style="width:100%; height:auto;" asp-append-version="true"/>
         </div>

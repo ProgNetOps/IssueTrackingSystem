@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Tracker.CustomValidations;
 using Tracker.Entity.Enums;
 
 namespace Tracker.Models.ViewModels
@@ -37,6 +38,8 @@ namespace Tracker.Models.ViewModels
         [EmailAddress]
         public string? Email { get; set; }
         [Display(Name ="Profile Picture")]
+        //[PermittedFileExtensions(".jpg",".jpeg",".png",ErrorMessage ="Uploaded file format is not supported")]
+        //[FileSizeLimit(2, ErrorMessage ="Maximum file size is 2MB")] //2MB picture
         public IFormFile? Photo { get; set; }
     }
 }

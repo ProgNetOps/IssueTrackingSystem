@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tracker.CustomValidations;
 using Tracker.Entity.Contract;
 using Tracker.Entity.Enums;
 
@@ -49,8 +50,9 @@ namespace Tracker.Entity
         /// </summary>
         [StringLength(70), Required(ErrorMessage = "Official email address is required")]
         [Display(Name = "Official Email")]
-        [RegularExpression(@"^[A-Za-z]+[.]{1}[A-Za-z]+(@gloworld.com)$", ErrorMessage = "Invalid email address")]
         [EmailAddress]
+        [ValidEmailDomain("gloworld.com", ErrorMessage = "The domain name is not valid")]
+        [EmailDelimiter('.', ErrorMessage = "Required email delimiter is missing")]
         public string? Email { get; set; }
 
         public string? PhotoPath { get; set; }

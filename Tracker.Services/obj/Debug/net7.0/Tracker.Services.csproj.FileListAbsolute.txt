@@ -90,3 +90,5 @@ C:\Repository\IssueTrackingSystem\Tracker.Services\obj\Debug\net7.0\refint\Track
 C:\Repository\IssueTrackingSystem\Tracker.Services\obj\Debug\net7.0\Tracker.Services.pdb
 C:\Repository\IssueTrackingSystem\Tracker.Services\obj\Debug\net7.0\Tracker.Services.genruntimeconfig.cache
 C:\Repository\IssueTrackingSystem\Tracker.Services\obj\Debug\net7.0\ref\Tracker.Services.dll
+C:\Repository\IssueTrackingSystem\Tracker.Services\bin\Debug\net7.0\Tracker.CustomValidations.dll
+C:\Repository\IssueTrackingSystem\Tracker.Services\bin\Debug\net7.0\Tracker.CustomValidations.pdb

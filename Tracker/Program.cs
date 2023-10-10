@@ -1,4 +1,6 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Tracker.Entity;
@@ -9,7 +11,6 @@ using Tracker.Services.Services;
 using Tracker.ServicesExtension;
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 builder.Services.ConfigureServices(builder.Configuration);
 
@@ -24,9 +25,12 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -90,6 +90,7 @@ h4 {
 
 ul {
     list-style: none;
+
 }
 
 a {
@@ -390,6 +391,10 @@ section {
         width: 100%;
         padding:1rem;
         position:relative;
+    }
+
+    .separator{
+        display:none;
     }
 
     main {

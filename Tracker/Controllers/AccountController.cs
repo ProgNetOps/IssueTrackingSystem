@@ -1,0 +1,135 @@
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Tracker.Entity;
+using Tracker.Models.ViewModels;
+
+namespace Tracker.Controllers
+{
+    
+    public class AccountController : Controller
+    {
+        private readonly SignInManager<ApplicationUser> signInManager;
+        private readonly UserManager<ApplicationUser> userManager;
+
+        public AccountController(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager)
+        {
+            this.signInManager = signInManager;
+            this.userManager = userManager;
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult Register()
+        {
+            ViewData["Title"] = "User Registration";
+            return View();
+        }
+
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> Register(RegisterViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var result = await userManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    await signInManager.SignInAsync(user, isPersistent: false);
+                    return RedirectToAction(nameof(Index), "ServiceManagement");
+                }
+                else
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                    return View(model);
+                }
+            }
+            else
+            {
+                return View(model);
+            }
+        }
+
+
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login()
+        {
+            ViewData["Title"] = "Login";
+            return View();
+        }
+
+        /// <summary>
+        /// Login action for straightforward login as well as if there is a return url, i.e user has earlier tried to access unauthorized resource before being returned to the login page
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login(LoginViewModel model, string? returnUrl)
+        //make returnurl type nullable to prevent a "returnUrl is required" error
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+
+                if (result.Succeeded)
+                {
+                    //WATCH FOR OPEN REDIRECT VULNERABILITY If there is a return url parameter
+                    if ((string.IsNullOrEmpty(returnUrl) == false) && (Url.IsLocalUrl(returnUrl) == true))
+                    {
+                        return Redirect(returnUrl);
+                    }
+                    else //If there is no return url parameter
+                    {
+                        return RedirectToAction(nameof(Index), "ServiceManagement");
+
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Invalid Login Attempt!");
+                    return View(model);
+                }
+            }
+            else
+            {
+                return View(model);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await signInManager.SignOutAsync();
+            return RedirectToAction(nameof(Index), "Home");
+        }
+
+        /// <summary>
+        /// This server-side method is used for remote validation of email field during registration of new user
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> IsEmailInUse(string email)
+        {
+            var user = await userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                return Json(true);
+            }
+            else
+            {
+                return Json($"{email} is already in use");
+            }
+        }
+
+    }
+}

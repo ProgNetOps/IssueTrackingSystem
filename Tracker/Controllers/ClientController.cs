@@ -19,7 +19,7 @@ namespace Tracker.Controllers
 
         public async Task<IActionResult> Index(string? searchBy = null, string? searchString = null, int pageNumber = 1, int pageSize = 100)
         {
-            ViewData["Title"] = "Circuits";
+            ViewData["Title"] = "Clients";
 
             //SEARCH
             ViewBag.SearchFields = new Dictionary<string, string>()

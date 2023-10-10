@@ -1,0 +1,12 @@
+C:\Repository\IssueTrackingSystem\CustomValidations\bin\Debug\net7.0\Tracker.CustomValidations.deps.json
+C:\Repository\IssueTrackingSystem\CustomValidations\bin\Debug\net7.0\Tracker.CustomValidations.dll
+C:\Repository\IssueTrackingSystem\CustomValidations\bin\Debug\net7.0\Tracker.CustomValidations.pdb
+C:\Repository\IssueTrackingSystem\CustomValidations\obj\Debug\net7.0\Tracker.CustomValidations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repository\IssueTrackingSystem\CustomValidations\obj\Debug\net7.0\Tracker.CustomValidations.AssemblyInfoInputs.cache
+C:\Repository\IssueTrackingSystem\CustomValidations\obj\Debug\net7.0\Tracker.CustomValidations.AssemblyInfo.cs
+C:\Repository\IssueTrackingSystem\CustomValidations\obj\Debug\net7.0\Tracker.CustomValidations.csproj.CoreCompileInputs.cache
+C:\Repository\IssueTrackingSystem\CustomValidations\obj\Debug\net7.0\Tracker.CustomValidations.dll
+C:\Repository\IssueTrackingSystem\CustomValidations\obj\Debug\net7.0\refint\Tracker.CustomValidations.dll
+C:\Repository\IssueTrackingSystem\CustomValidations\obj\Debug\net7.0\Tracker.CustomValidations.pdb
+C:\Repository\IssueTrackingSystem\CustomValidations\obj\Debug\net7.0\ref\Tracker.CustomValidations.dll
+C:\Repository\IssueTrackingSystem\CustomValidations\obj\Debug\net7.0\Tracker.CustomValidations.csproj.AssemblyReference.cache

@@ -2,8 +2,10 @@
     ViewData["Title"] = "Not Found";
 }
 
-<h1>@ViewData["ErrorMessage"] </h1>
+<h1 class="text-center">@ViewData["ErrorMessage"] </h1>
 
-<a asp-controller="Home" asp-action="Index" class="btn btn btn-primary">
-    Click here to navigate to the home page
-</a>
+<div class="text-center">
+    <a asp-controller="Home" asp-action="Index" class="btn btn btn-primary">
+        Click here to navigate to the home page
+    </a>
+</div>

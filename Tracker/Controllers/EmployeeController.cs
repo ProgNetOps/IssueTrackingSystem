@@ -42,15 +42,14 @@ namespace Tracker.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+			ViewData["Title"] = "Create Employee";
+
+			return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(EmployeeCreateViewModel? model)
         {
-            ViewData["Title"] = "Create Employee";
-
-
             if (ModelState.IsValid)
             {
                 string uniqueFilename = ProcessUploadedFile(model);
@@ -99,7 +98,7 @@ namespace Tracker.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(EmployeeEditViewModel? model)
         {
-            ViewData["Title"] = "Edit Employee";
+            ViewData["Title"] = "Update Profile";
 
 
             if (ModelState.IsValid)

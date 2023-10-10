@@ -23,21 +23,34 @@ namespace Tracker.Controllers
                     //logger.LogWarning($"404 error occured. Path = {statusCodeResult.OriginalPath}" +
                     //    $" and QueryString = {statusCodeResult.OriginalQueryString}");
                     break;
+
+                default:
+
+                    ViewData["ErrorMessage"] = "An error occured, sorry";
+                    break;
             }
             return View("NotFound");
         }
 
 
+        /// <summary>
+        /// Action method that handles unhandled exceptions
+        /// </summary>
+        /// <returns></returns>
         [Route("Error")]
         [AllowAnonymous]
         public IActionResult Error()
         {
             var exceptionDetails = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
 
+            ViewBag.ExceptionPath = exceptionDetails.Path;
+            ViewBag.ExceptionMessage = exceptionDetails.Error.Message;
+            ViewBag.StackTrace = exceptionDetails.Error.StackTrace;
+
             //logger.LogError($"The path {exceptionDetails.Path} threw an exception " +
             //    $"{exceptionDetails.Error}");
 
-            return View();
+            return View("Error");
         }
     }
 }
