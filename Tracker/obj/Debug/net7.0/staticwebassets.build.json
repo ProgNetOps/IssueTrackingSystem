@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LIrcHdsH3uWHzfSJCE/RWeSP4qETX33i6l6H5wTRQVs=",
+  "Hash": "nYhCHfnWyqkL7zK3yV+ZQ1P8KBsTnamtQdSZWlVZHKU=",
   "Source": "Tracker",
   "BasePath": "_content/Tracker",
   "Mode": "Default",
@@ -187,12 +187,12 @@
       "OriginalItemSpec": "wwwroot\\glo_smaller.png"
     },
     {
-      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\0c9ba544-0df9-4ad0-aa94-da31ef628241_img7.jpeg",
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\0323742b-44e9-4c25-92bf-f313f6e78996_img3.jpeg",
       "SourceId": "Tracker",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
       "BasePath": "_content/Tracker",
-      "RelativePath": "images/0c9ba544-0df9-4ad0-aa94-da31ef628241_img7.jpeg",
+      "RelativePath": "images/0323742b-44e9-4c25-92bf-f313f6e78996_img3.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -201,15 +201,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\0c9ba544-0df9-4ad0-aa94-da31ef628241_img7.jpeg"
+      "OriginalItemSpec": "wwwroot\\images\\0323742b-44e9-4c25-92bf-f313f6e78996_img3.jpeg"
     },
     {
-      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\18c404a2-2a17-43be-a736-6e3bf24a8406_img2.jpeg",
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\0a4c601c-3c3c-4283-9c87-020bb6b4cede_img1.jpeg",
       "SourceId": "Tracker",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
       "BasePath": "_content/Tracker",
-      "RelativePath": "images/18c404a2-2a17-43be-a736-6e3bf24a8406_img2.jpeg",
+      "RelativePath": "images/0a4c601c-3c3c-4283-9c87-020bb6b4cede_img1.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,15 +218,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\18c404a2-2a17-43be-a736-6e3bf24a8406_img2.jpeg"
+      "OriginalItemSpec": "wwwroot\\images\\0a4c601c-3c3c-4283-9c87-020bb6b4cede_img1.jpeg"
     },
     {
-      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\2957b2fb-ccbe-4471-b547-705d86ea1170_img1.jpeg",
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\74ce78f1-ddb0-411c-9451-d715bd632c60_img11.jpeg",
       "SourceId": "Tracker",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
       "BasePath": "_content/Tracker",
-      "RelativePath": "images/2957b2fb-ccbe-4471-b547-705d86ea1170_img1.jpeg",
+      "RelativePath": "images/74ce78f1-ddb0-411c-9451-d715bd632c60_img11.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,15 +235,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\2957b2fb-ccbe-4471-b547-705d86ea1170_img1.jpeg"
+      "OriginalItemSpec": "wwwroot\\images\\74ce78f1-ddb0-411c-9451-d715bd632c60_img11.jpeg"
     },
     {
-      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\90906bed-b288-4268-8382-84be06956c50_img11.jpeg",
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\a4dff3c3-473a-4fb7-8933-fda6389d50ab_img5.jpeg",
       "SourceId": "Tracker",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
       "BasePath": "_content/Tracker",
-      "RelativePath": "images/90906bed-b288-4268-8382-84be06956c50_img11.jpeg",
+      "RelativePath": "images/a4dff3c3-473a-4fb7-8933-fda6389d50ab_img5.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -252,15 +252,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\90906bed-b288-4268-8382-84be06956c50_img11.jpeg"
+      "OriginalItemSpec": "wwwroot\\images\\a4dff3c3-473a-4fb7-8933-fda6389d50ab_img5.jpeg"
     },
     {
-      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\b9b04442-fb03-4426-8a17-779e99c29728_img6.jpeg",
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\cae06769-41df-4604-a3fc-a61e6052ec34_img6.jpeg",
       "SourceId": "Tracker",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
       "BasePath": "_content/Tracker",
-      "RelativePath": "images/b9b04442-fb03-4426-8a17-779e99c29728_img6.jpeg",
+      "RelativePath": "images/cae06769-41df-4604-a3fc-a61e6052ec34_img6.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -269,15 +269,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\b9b04442-fb03-4426-8a17-779e99c29728_img6.jpeg"
+      "OriginalItemSpec": "wwwroot\\images\\cae06769-41df-4604-a3fc-a61e6052ec34_img6.jpeg"
     },
     {
-      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\c9ad9c69-4256-497d-91d4-47ee3f2a8bb1_img5.jpeg",
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\e159a223-f179-4ee3-a94e-2eac7b537414_img3.jpeg",
       "SourceId": "Tracker",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
       "BasePath": "_content/Tracker",
-      "RelativePath": "images/c9ad9c69-4256-497d-91d4-47ee3f2a8bb1_img5.jpeg",
+      "RelativePath": "images/e159a223-f179-4ee3-a94e-2eac7b537414_img3.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -286,7 +286,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\c9ad9c69-4256-497d-91d4-47ee3f2a8bb1_img5.jpeg"
+      "OriginalItemSpec": "wwwroot\\images\\e159a223-f179-4ee3-a94e-2eac7b537414_img3.jpeg"
+    },
+    {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\e4f9582d-43c2-4586-9ff8-70c057034c48_img7.jpeg",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "images/e4f9582d-43c2-4586-9ff8-70c057034c48_img7.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\e4f9582d-43c2-4586-9ff8-70c057034c48_img7.jpeg"
     },
     {
       "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\NoImage.jpg",
@@ -1324,6 +1341,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\forbidden.jpg",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "Resources/forbidden.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\forbidden.jpg"
     }
   ]
 }

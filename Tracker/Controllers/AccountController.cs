@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Tracker.Entity;
@@ -6,16 +7,17 @@ using Tracker.Models.ViewModels;
 
 namespace Tracker.Controllers
 {
-    
     public class AccountController : Controller
     {
         private readonly SignInManager<ApplicationUser> signInManager;
         private readonly UserManager<ApplicationUser> userManager;
+        private readonly IWebHostEnvironment webHostEnvironment;
 
-        public AccountController(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager)
+        public AccountController(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager, IWebHostEnvironment webHostEnvironment)
         {
             this.signInManager = signInManager;
             this.userManager = userManager;
+            this.webHostEnvironment = webHostEnvironment;
         }
 
         [HttpGet]
@@ -33,8 +35,22 @@ namespace Tracker.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                string uniqueFilename = ProcessUploadedFile(model);
+
+                var user = new ApplicationUser 
+                {
+                    UserName = model.Email, 
+                    Email = model.Email,
+                    FirstName = model.FirstName,
+                    SurName = model.SurName,
+                    Gender = model.Gender,
+                    Unit = model.Unit,
+                    PhoneNumber = model.PhoneNumber,
+                    PhotoPath = uniqueFilename
+                };
+
                 var result = await userManager.CreateAsync(user, model.Password);
+
                 if (result.Succeeded)
                 {
                     await signInManager.SignInAsync(user, isPersistent: false);
@@ -130,6 +146,33 @@ namespace Tracker.Controllers
                 return Json($"{email} is already in use");
             }
         }
+
+
+        private string ProcessUploadedFile(RegisterViewModel? model)
+        {
+            string uniqueFilename = null;
+
+            if (model.Photo != null)
+            {
+                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
+                uniqueFilename = $"{Guid.NewGuid().ToString()}_{model.Photo.FileName}";
+                string filePath = Path.Combine(uploadsFolder, uniqueFilename);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.Photo.CopyTo(fileStream);
+                }
+            }
+
+            return uniqueFilename;
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+
 
     }
 }

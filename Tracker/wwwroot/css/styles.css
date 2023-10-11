@@ -281,7 +281,7 @@ section {
     /*Single line fade with one line*/
     white-space: nowrap;
     -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 70%, rgba(0,0,0,0));
-    font-size: calc(1rem + 2vw);
+    font-size: calc(2.5rem + 3vw);
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
@@ -404,14 +404,7 @@ section {
         background-color: var(--body-color);
     }
 
-    .mainHeaderDetails {
-        font-size: calc(1.5rem + 1.5vw);
-        font-weight: bold;
-        text-align: center;
-        background: -webkit-linear-gradient( right, #4bc7d2, #09ef11, #4bc7d2, #04953b );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+    
 
     header {
         width: 100%;

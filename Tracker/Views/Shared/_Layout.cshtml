@@ -42,11 +42,15 @@
                             <i class="uil uil-user nav__icon"></i> About
                         </a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Manage
-                        </a>
-                    </li>
+                    @if(signInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Super Admin")))
+                    {
+                        <li class="nav__item">
+                            <a asp-controller="Administration" asp-action="ListRoles" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Manage Roles
+                            </a>
+                        </li>
+                    }
+
                     <li class="nav__item" id="contact">
                         <a href="#contact" class="nav__link">
                             <i class="uil uil-message nav__icon"></i> Contact Us

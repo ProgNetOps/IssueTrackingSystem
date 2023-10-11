@@ -13,7 +13,7 @@ namespace Tracker.Entity
 {
     public class ApplicationUser: IdentityUser
     {
-        public Gender Gender { get; set; }
+        public Gender? Gender { get; set; }
 
         /// <summary>
         /// Surname of personnel
@@ -58,14 +58,6 @@ namespace Tracker.Entity
         [RegularExpression(@"^(0805557)[0-9]{4}$", ErrorMessage = "Invalid staff number")]
         [Display(Name = "Phone")]
         public string? PhoneNumber { get; set; }
-
-        /// <summary>
-        /// State of office address
-        /// </summary>
-        [Display(Name ="State of Office Address")]
-        public int StateId { get; set; }
-        [ForeignKey(nameof(StateId))]
-        public State? State { get; set; }
 
 
         /// <summary>

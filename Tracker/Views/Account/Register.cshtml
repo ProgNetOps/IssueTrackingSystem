@@ -1,56 +1,97 @@
 ﻿@model RegisterViewModel
 
-<section class="p-5">
+<section>
 
+	<div class="mt-3 text-black" style="border-radius: 1rem;">
 
-	<form enctype="multipart/form-data" asp-controller="Account" asp-action="Register" method="post" class="mt-3 p-3 text-black" style="border: 2px solid green; border-radius: 1rem;">
-
-		<h1 class="m-3 mainHeaderDetails" >REGISTER</h1>
-
-		<div class="form-group row m-2">
-			<label asp-for="Email" class="col-sm-3 col-form-label"></label>
-			<div class="col-sm-9">
-				<input asp-for="Email" class="form-control" placeholder="Email"/>
-				<span asp-validation-for="Email" class="text-danger"></span>
-			</div>
+		<div class="text-center">
+			<h2 class="mainHeaderDetails">REGISTER</h2>
 		</div>
 
-		<div class="form-group row m-2">
-			<label asp-for="Password" class="col-sm-3 col-form-label"></label>
-			<div class="col-sm-9">
-				<input asp-for="Password" class="form-control" placeholder="Password" />
-				<span asp-validation-for="Password" class="text-danger"></span>
-			</div>
-		</div>
+		<form enctype="multipart/form-data" asp-controller="Account" asp-action="Register"	method="post" class="mt-3 p-3 text-black" style="border:2px solid green; border-radius: 1rem;">
 
-		<div class="form-group row m-2">
-			<label asp-for="ConfirmPassword" class="col-sm-3 col-form-label"></label>
-			<div class="col-sm-9">
-				<input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password" />
-				<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-			</div>
-		</div>
 
-	@* 	<div class="form-group row m-2">
-			<label asp-for="Unit" class="col-sm-3 col-form-label"></label>
-			<div class="col-sm-9">
-				<select placeholder="Choose..." class="form-select mr-sm-2" asp-for="Unit" asp-items="Html.GetEnumSelectList<Unit>()">
-					<option value="">Please Select</option>
-				</select>
-				<span asp-validation-for="Unit" class="text-danger"></span>
+			<div class="form-group row m-2">
+				<label asp-for="Email" class="col-sm-3 col-form-label"></label>
+				<div class="col-sm-9">
+					<input asp-for="Email" class="form-control" placeholder="Email"/>
+					<span asp-validation-for="Email" class="text-danger"></span>
+				</div>
 			</div>
-		</div>
-		<div class="form-group row m-2">
-			<label asp-for="Photo" class="col-sm-3 col-form-label"></label>
-			<div class="col-sm-9">
-				<input asp-for="Photo" class="form-control" />
-			</div>
-		</div> *@
-		
-		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-		<div class="text-center mt-3">
-			<button class="btn btn-primary" type="submit">Register</button>
-		</div>
-	</form>
+			<div class="form-group row m-2">
+				<label asp-for="Password" class="col-sm-3 col-form-label"></label>
+				<div class="col-sm-9">
+					<input asp-for="Password" class="form-control" placeholder="Password" />
+					<span asp-validation-for="Password" class="text-danger"></span>
+				</div>
+			</div>
+
+			<div class="form-group row m-2">
+				<label asp-for="ConfirmPassword" class="col-sm-3 col-form-label"></label>
+				<div class="col-sm-9">
+					<input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm	Password" />
+					<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+				</div>
+			</div>
+
+
+			<div class="form-group row m-2">
+				<label asp-for="SurName" class="col-sm-3 col-form-label"></label>
+				<div class="col-sm-9">
+					<input asp-for="SurName" class="form-control" placeholder="Surname" />
+					<span asp-validation-for="SurName" class="text-danger"></span>
+				</div>
+			</div>
+			<div class="form-group row m-2">
+				<label asp-for="FirstName" class="col-sm-3 col-form-label"></label>
+				<div class="col-sm-9">
+					<input asp-for="FirstName" class="form-control" placeholder="First Name" />
+					<span asp-validation-for="FirstName" class="text-danger"></span>
+				</div>
+			</div>
+
+			<div class="form-group row m-2">
+				<label asp-for="Gender" class="col-sm-3 col-form-label"></label>
+				<div class="col-sm-9">
+					<select placeholder="Choose..." class="form-select mr-sm-2" asp-for="Gender"	asp-items="Html.GetEnumSelectList<Gender>()">
+						<option value="">Please Select</option>
+					</select>
+					<span asp-validation-for="Gender" class="text-danger"></span>
+				</div>
+			</div>
+
+			<div class="form-group row m-2">
+				<label asp-for="Unit" class="col-sm-3 col-form-label"></label>
+				<div class="col-sm-9">
+					<select placeholder="Choose..." class="form-select mr-sm-2" asp-for="Unit"	asp-items="Html.GetEnumSelectList<Unit>()">
+						<option value="">Please Select</option>
+					</select>
+					<span asp-validation-for="Unit" class="text-danger"></span>
+				</div>
+			</div>
+
+			<div class="form-group row m-2">
+				<label asp-for="PhoneNumber" class="col-sm-3 col-form-label"></label>
+				<div class="col-sm-9">
+					<input asp-for="PhoneNumber" class="form-control" placeholder="Phone	Number" />
+					<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+				</div>
+			</div>
+
+			<div class="form-group row m-2">
+				<label asp-for="Photo" class="col-sm-3 col-form-label"></label>
+				<div class="col-sm-9">
+					<input asp-for="Photo" class="form-control" />
+				</div>
+			</div>
+
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+			<div class="text-center mt-3">
+				<button class="btn btn-primary" type="submit">Register</button>
+			</div>
+		</form>
+
+	</div>
 </section>
