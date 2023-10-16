@@ -9,6 +9,110 @@
       "PackagePath": "staticwebassets\\Resources\\forbidden.jpg"
     },
     {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\AccessDenied.JPG",
+      "PackagePath": "staticwebassets\\Resources\\images\\AccessDenied.JPG"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\Capture.JPG",
+      "PackagePath": "staticwebassets\\Resources\\images\\Capture.JPG"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\High_speed_technology.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\High_speed_technology.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\IpSec.jpeg",
+      "PackagePath": "staticwebassets\\Resources\\images\\IpSec.jpeg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\MPLS.JPG",
+      "PackagePath": "staticwebassets\\Resources\\images\\MPLS.JPG"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\PRI.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\PRI.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\Security.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\Security.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\city.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\city.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\corporate.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\corporate.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\data-center.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\data-center.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\glo_small.ico",
+      "PackagePath": "staticwebassets\\Resources\\images\\glo_small.ico"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\glo_small.png",
+      "PackagePath": "staticwebassets\\Resources\\images\\glo_small.png"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\ipsec.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\ipsec.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\keyboard.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\keyboard.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\oil-rig.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\oil-rig.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\sat-dish.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\sat-dish.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\school.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\school.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\secureAPN.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\secureAPN.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\server-room.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\server-room.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\sim-card-green.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\sim-card-green.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\sim-card.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\sim-card.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\telecomms-radio.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\telecomms-radio.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\testimonial-1.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\testimonial-2.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\thanks.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\thanks.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Welcome.html",
+      "PackagePath": "staticwebassets\\Welcome.html"
+    },
+    {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\city.jpg",
       "PackagePath": "staticwebassets\\city.jpg"
     },
@@ -25,8 +129,16 @@
       "PackagePath": "staticwebassets\\css\\PhotoStyle.css"
     },
     {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\WelcomePageStyle.css",
+      "PackagePath": "staticwebassets\\css\\WelcomePageStyle.css"
+    },
+    {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\asideStyle.css",
       "PackagePath": "staticwebassets\\css\\asideStyle.css"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\resources.css",
+      "PackagePath": "staticwebassets\\css\\resources.css"
     },
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\css\\styles.css",
@@ -65,12 +177,20 @@
       "PackagePath": "staticwebassets\\images\\cae06769-41df-4604-a3fc-a61e6052ec34_img6.jpeg"
     },
     {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\cb70500c-640b-4f42-91aa-dd30590fb393_Lion.jpg",
+      "PackagePath": "staticwebassets\\images\\cb70500c-640b-4f42-91aa-dd30590fb393_Lion.jpg"
+    },
+    {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\e159a223-f179-4ee3-a94e-2eac7b537414_img3.jpeg",
       "PackagePath": "staticwebassets\\images\\e159a223-f179-4ee3-a94e-2eac7b537414_img3.jpeg"
     },
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\e4f9582d-43c2-4586-9ff8-70c057034c48_img7.jpeg",
       "PackagePath": "staticwebassets\\images\\e4f9582d-43c2-4586-9ff8-70c057034c48_img7.jpeg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\fce7a061-fde6-4253-9d8c-bfea3838d64f_lionhead.jpg",
+      "PackagePath": "staticwebassets\\images\\fce7a061-fde6-4253-9d8c-bfea3838d64f_lionhead.jpg"
     },
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\router.svg",

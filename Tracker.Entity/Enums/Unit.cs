@@ -9,9 +9,9 @@ namespace Tracker.Entity.Enums
     public enum Unit
     {
         None,
-        TechProjects,
-        TechOperations,
-        ServiceMgt,
+        Projects,
+        Operations,
+        ServiceManagement,
         SPOC,
         Sales
     }

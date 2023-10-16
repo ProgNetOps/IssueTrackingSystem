@@ -53,8 +53,18 @@ namespace Tracker.Controllers
 
                 if (result.Succeeded)
                 {
-                    await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction(nameof(Index), "ServiceManagement");
+                    //If an admin creates a new user profile
+                    if (signInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Super Admin")))
+                    {
+                        return RedirectToAction("ListUsers", "Administration");
+                    }
+                    //If new user registers to create profile by self
+                    else
+                    {
+                        await signInManager.SignInAsync(user, isPersistent: false);
+                        return RedirectToAction(nameof(Index), "Home");
+                    }
+                    
                 }
                 else
                 {
@@ -103,7 +113,7 @@ namespace Tracker.Controllers
                     }
                     else //If there is no return url parameter
                     {
-                        return RedirectToAction(nameof(Index), "ServiceManagement");
+                        return RedirectToAction(nameof(Index), "Home");
 
                     }
                 }

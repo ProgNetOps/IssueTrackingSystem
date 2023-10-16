@@ -26,12 +26,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="~/css/photostyle.css" />
 	<link href="~/css/asidestyle.css" rel="stylesheet" />
+	<link href="~/css/resources.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header" id="header">
         <nav class="nav">            
                 <a asp-controller="Home" asp-action="Index" class="nav__logo" >
-                <span style="color:#ffe4e4;background-color:#333;border:5px 0 2px 2px; border-style: solid; border-color: #ffe4e4; border-radius:5px;">ish</span><span style="background-color:#ffe4e4; color:#333; padding-right: 2px;">Tracker</span>
+                <span style="color:#ffe4e4;background-color:#333;border:5px 0 2px 2px; border-style: solid; border-color: #ffe4e4; border-radius:5px;">i</span><span style="background-color:#ffe4e4; color:#333; padding-right: 2px;">TrackIt</span>
                 </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -44,12 +46,19 @@
                     </li>
                     @if(signInManager.IsSignedIn(User) && (User.IsInRole("Admin") || User.IsInRole("Super Admin")))
                     {
-                        <li class="nav__item">
-                            <a asp-controller="Administration" asp-action="ListRoles" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Manage Roles
-                            </a>
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link dropdown-toggle" id="navbarDropdownMenuLink"
+                               data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage</a>
+                            <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item text-white" asp-controller="Administration" asp-action="ListUsers">Users</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-white" asp-controller="Administration" asp-action="ListRoles">Roles</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-white" asp-controller="Account" asp-action="ChangePassword">Change Password</a>
+                            </div>
                         </li>
                     }
+
 
                     <li class="nav__item" id="contact">
                         <a href="#contact" class="nav__link">
@@ -94,21 +103,54 @@
 
     <aside class="sidebar">
         <ul>
-            <li class="profilePic">
-                <a href="#">
-                    <span class="icon">
-                        <div class="profileImg"><img src="/lionhead.jpg" alt=""></div>
-                    </span>
-                    <span class="text">First Name</span>
-                </a>
-            </li>
             <li>
-                <a href="#">
+                <a asp-controller="Home" asp-action="Index">
                     <span class="icon">
                         <i class="bi bi-house"></i>
 
                     </span>
                     <span class="text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Resources" asp-action="AdminPanel">
+                    <span class="icon">
+                        <i class="bi bi-person-fill-gear"></i>
+                    </span>
+                    <span class="text">Admin Panel</span>
+                </a>
+            </li>
+
+            <li>
+                <a asp-controller="Resources" asp-action="TechnicalTools">
+                    <span class="icon">
+                        <i class="bi bi-tools"></i>
+                    </span>
+                    <span class="text">Resources</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Servicemanagement" asp-action="Index">
+                    <span class="icon">
+                        <i class="bi bi-file-earmark-spreadsheet"></i>
+                    </span>
+                    <span class="text">Ticketing Sys</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Employee" asp-action="Index">
+                    <span class="icon">
+                        <i class="bi bi-person-fill"></i>
+                    </span>
+                    <span class="text">Profile Mgt</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="bi bi-stack"></i>
+                    </span>
+                    <span class="text">Service Mgt</span>
                 </a>
             </li>
             <li>
@@ -127,47 +169,7 @@
                     <span class="text">Analytics</span>
                 </a>
             </li>
-            <li>
-                <a asp-controller="Employee" asp-action="Index">
-                    <span class="icon">
-                        <i class="bi bi-people-fill"></i>
-                    </span>
-                    <span class="text">Staff Mgt</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon">
-                        <i class="bi bi-headset"></i>
-                    </span>
-                    <span class="text">Service Mgt</span>
-                </a>
-            </li>
-            <li>
-                <a asp-controller="Servicemanagement" asp-action="Index">
-                    <span class="icon">
-                        <i class="bi bi-table"></i>
-                    </span>
-                    <span class="text">Ticketing Sys</span>
-                </a>
-            </li>
-            <li>
-                <a asp-controller="BTS" asp-action="Index">
-                    <span class="icon">
-                        &#128508;
-                    </span>
-                    <span class="text">Base Station</span>
-                </a>
-            </li>
-                <li class="bottom">
-                    <a href="#">
-                        <span class="icon">
-                            <i class="bi bi-box-arrow-right"></i>
-                        </span>
-                        <span class="text">Logout</span>
-                    </a>
-                </li>
-            </span>
+               
         </ul>
     </aside>
 
@@ -191,7 +193,7 @@
                     
             <div class="footer__copyright">                
                 <p >
-                    <span style="color:#ffe4e4;background-color:#333;border:5px 0 2px 2px; border-style: solid; border-color: #ffe4e4; border-radius:5px;">ish</span><span style="background-color:#ffe4e4; color:#333; padding-right: 2px;">Tracker</span> &copy; 2023 | All rights reserved.
+                    <span style="color:#ffe4e4;background-color:#333;border:5px 0 2px 2px; border-style: solid; border-color: #ffe4e4; border-radius:5px;">i</span><span style="background-color:#ffe4e4; color:#333; padding-right: 2px;">TrackIt</span> &copy; 2023 | All rights reserved.
                 </p>
             </div>
         </div>

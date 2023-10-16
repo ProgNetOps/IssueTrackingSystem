@@ -15,16 +15,7 @@ namespace Tracker.Entity
     public class MPLSPoP:IEntityBase
     {
         #region Properties
-        [Key]
-        public int Id { get; set; }
-
-        /// <summary>
-        /// Foreign key for the base station where router is located
-        /// </summary>
-        public int BTSId { get; set; }
-        [ForeignKey(nameof(BTSId))]
-        public BTS? BTS { get; set; }
-
+    
         /// <summary>
         /// Name of router
         /// </summary>
@@ -48,6 +39,18 @@ namespace Tracker.Entity
         [Display(Name = "NE IP Address")]
         [StringLength(15)]
         public string? NEIpAddress { get; set; }
+
+        [Key]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Foreign key for the base station where router is located
+        /// </summary>
+        public int BTSId { get; set; }
+        [ForeignKey(nameof(BTSId))]
+        public BTS? BTS { get; set; }
+                
+        public List<DCNRouter>? Routers { get; set; }
 
         public List<Circuit>? Circuits { get; set; }
 

@@ -28,12 +28,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFJvbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Administration/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Repository/IssueTrackingSystem/Tracker/Views/Administration/EditUsersInRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cRWRpdFVzZXJzSW5Sb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/Administration/ListRoles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTGlzdFJvbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Administration/ListUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTGlzdFVzZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/BTS/Create.cshtml]
@@ -110,6 +118,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/NetworkSwitch/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV0d29ya1N3aXRjaFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Resources/AdminPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb3VyY2VzXEFkbWluUGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Resources/TechnicalTools.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb3VyY2VzXFRlY2huaWNhbFRvb2xzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/ServiceManagement/Index.cshtml]

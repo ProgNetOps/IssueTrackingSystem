@@ -46,11 +46,14 @@ namespace Tracker.ServicesExtension
 			//Add Client Service
 			services.AddScoped<IClientService, ClientService>();
 
-			//Add Circuit Service
-			services.AddScoped<ICircuitService, CircuitService>();
+            //Add Circuit Service
+            services.AddScoped<ICircuitService, CircuitService>();
 
-			//Add MPLSPoP Service
-			services.AddScoped<IMPLSPoPService, MPLSPoPService>();
+            //Add DCNRouter Service
+            services.AddScoped<IDCNRouterService, DCNRouterService>();
+
+            //Add MPLSPoP Service
+            services.AddScoped<IMPLSPoPService, MPLSPoPService>();
 
 			//Add Employee Service
 			services.AddScoped<IEmployeeService, EmployeeService>();

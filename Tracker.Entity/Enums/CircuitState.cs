@@ -11,9 +11,6 @@ namespace Tracker.Entity.Enums
         Active = 1,
         Suspended,
         Terminated,
-        MarkedForReactivation,
-        MarkedForSuspension,
-        MarkedForTermination,
         NotAvailable
 
     }

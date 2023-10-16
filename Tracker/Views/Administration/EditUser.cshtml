@@ -1,0 +1,274 @@
+﻿@model EditUserViewModel
+
+@{
+    string photoPath = "~/images/" + (Model.ExistingPhotoPath ?? "NoImage.jpg");
+}
+
+<section class="p-5">
+    <form enctype="multipart/form-data" asp-controller="Administration" asp-action="EditUser" method="post" class="mt-3 p-3 text-black" style="border: 2px solid green; border-radius: 1rem;">
+
+        <input hidden asp-for="Id" />
+        <input hidden asp-for="ExistingPhotoPath" />
+
+        <div class="form-group row m-2">
+            <label asp-for="SurName" class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9">
+                <input asp-for="SurName" class="form-control" placeholder="surname" />
+                <span asp-validation-for="SurName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="FirstName" class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9">
+                <input asp-for="FirstName" class="form-control" placeholder="First Name" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="Email" class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9">
+                <input asp-for="Email" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="Unit" class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9">
+                <select placeholder="Choose..." class="form-select mr-sm-2" asp-for="Unit" asp-items="Html.GetEnumSelectList<Unit>()">
+                    <option value="">Please Select</option>
+                </select>
+                <span asp-validation-for="Unit" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="Gender" class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9">
+                <select placeholder="Choose..." class="form-select mr-sm-2" asp-for="Gender" asp-items="Html.GetEnumSelectList<Gender>()">
+                    <option value="">Please Select</option>
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row m-2">
+            <label asp-for="PhoneNumber" class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9">
+                <input asp-for="PhoneNumber" class="form-control" placeholder="Phone	Number" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+        </div>
+
+
+        <div class="form-group row m-2">
+            <label asp-for="Photo" class="col-sm-3 col-form-label">Change Profile Picture </label>
+            <div class="col-sm-9">
+                <input asp-for="Photo" class="form-control" />
+            </div>
+        </div>
+
+
+        <div class="form-group row col-sm-4 offset-4">
+            <img src="@photoPath" class="imageThumbnail" asp-append-version="true" />
+        </div>
+
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Update</button>
+                <a asp-action="ListUsers" class="btn btn-primary">Cancel</a>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <h3>User Roles</h3>
+            </div>
+            <div class="card-body">
+                @if (Model.Roles.Any())
+                {
+                    foreach (var role in Model.Roles)
+                    {
+                        <h5 class="card-title">@role</h5>
+                    }
+                }
+                else
+                {
+                    <h5 class="card-title">None at the moment</h5>
+                }
+            </div>
+            <div class="card-footer">
+                <a asp-action="ManageUserRoles" asp-route-UserId="@Model.Id" class="btn btn-primary">
+                    Manage Roles
+                </a>
+            </div>
+        </div>
+
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <h3>User Claims</h3>
+            </div>
+            <div class="card-body">
+                @if (Model.Roles.Any())
+                {
+                    foreach (var claim in Model.Claims)
+                    {
+                        <h5 class="card-title">@claim</h5>
+                    }
+                }
+                else
+                {
+                    <h5 class="card-title">None at the moment</h5>
+                }
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">
+                    Manage Claims
+                </a>
+            </div>
+        </div>
+    </form>
+</section>
+
+@* 
+<div>
+    <h1 id="mainHeader" class="text-center">Edit User</h1>
+
+    <form asp-asp-controller="Administration" asp-action="EditUser" method="post" class="mt-3">
+
+        <input hidden asp-for="ExistingPhotoPath" />
+
+        <div class="form-group row">
+            <label asp-for="Id" class="col-sm-2 col-form-label text-white"></label>
+            <div class="col-sm-10">
+                <input asp-for="Id" disabled class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="FirstName" class="col-sm-2 col-form-label text-white"></label>
+            <div class="col-sm-10">
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="SurName" class="col-sm-2 col-form-label text-white"></label>
+            <div class="col-sm-10">
+                <input asp-for="SurName" class="form-control" />
+                <span asp-validation-for="SurName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Email" class="col-sm-2 col-form-label text-white"></label>
+            <div class="col-sm-10">
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="PhoneNumber" class="col-sm-2 col-form-label text-white"></label>
+            <div class="col-sm-10">
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row m-2">
+            <label asp-for="Gender" class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9">
+                <select placeholder="Choose..." class="form-select mr-sm-2" asp-for="Gender" asp-items="Html.GetEnumSelectList<Gender>()">
+                    <option value="">Please Select</option>
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row m-2">
+            <label asp-for="Unit" class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9">
+                <select placeholder="Choose..." class="form-select mr-sm-2" asp-for="Unit" asp-items="Html.GetEnumSelectList<Unit>()">
+                    <option value="">Please Select</option>
+                </select>
+                <span asp-validation-for="Unit" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row m-2">
+            <label asp-for="PhoneNumber" class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9">
+                <input asp-for="PhoneNumber" class="form-control" placeholder="Phone	Number" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row m-2">            
+            <label asp-for="Photo" class="col-sm-3 col-form-label">Change Profile Picture </label>
+            <div class="col-sm-9">
+                <input asp-for="Photo" class="form-control" />
+            </div>
+        </div>
+
+        <div class="form-group row col-sm-4 offset-4">
+            <img src="@photoPath" class="imageThumbnail" asp-append-version="true" />
+        </div>
+
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Update</button>
+                <a asp-action="ListUsers" class="btn btn-primary">Cancel</a>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <h3>User Roles</h3>
+            </div>
+            <div class="card-body">
+                @if (Model.Roles.Any())
+                {
+                    foreach (var role in Model.Roles)
+                    {
+                        <h5 class="card-title">@role</h5>
+                    }
+                }
+                else
+                {
+                    <h5 class="card-title">None at the moment</h5>
+                }
+            </div>
+            <div class="card-footer">
+                <a asp-action="ManageUserRoles" asp-route-UserId="@Model.Id" class="btn btn-primary">
+                    Manage Roles
+                </a>
+            </div>
+        </div>
+
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <h3>User Claims</h3>
+            </div>
+            <div class="card-body">
+                @if (Model.Roles.Any())
+                {
+                    foreach (var claim in Model.Claims)
+                    {
+                        <h5 class="card-title">@claim</h5>
+                    }
+                }
+                else
+                {
+                    <h5 class="card-title">None at the moment</h5>
+                }
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-primary">
+                    Manage Claims
+                </a>
+            </div>
+        </div>
+    </form>
+</div> *@

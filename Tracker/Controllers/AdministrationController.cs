@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Tracker.Entity;
@@ -6,16 +7,18 @@ using Tracker.Models.ViewModels;
 
 namespace Tracker.Controllers
 {
-    [Authorize(Roles = "Admin,Super Admin")]
+    //[Authorize(Roles = "User,Super Admin")]
     public class AdministrationController : Controller
     {
         private readonly RoleManager<IdentityRole> roleManager;
         private readonly UserManager<ApplicationUser> userManager;
+        private readonly IWebHostEnvironment webHostEnvironment;
 
-        public AdministrationController(RoleManager<IdentityRole> roleManager, UserManager<ApplicationUser> userManager)
+        public AdministrationController(RoleManager<IdentityRole> roleManager, UserManager<ApplicationUser> userManager, IWebHostEnvironment webHostEnvironment)
         {
             this.roleManager = roleManager;
             this.userManager = userManager;
+            this.webHostEnvironment = webHostEnvironment;
         }
 
         [HttpGet]
@@ -209,5 +212,110 @@ namespace Tracker.Controllers
         }
 
         
+        [HttpGet]
+        public IActionResult ListUsers()
+        {
+            ViewData["Title"] = "All Users";
+
+            var users = userManager.Users;//returns a list of all users
+            return View(users);
+        }
+
+
+
+        [HttpGet]
+        public async Task<IActionResult> EditUser(string id)
+        {
+            ViewData["Title"] = "Edit User";
+
+            var user = await userManager.FindByIdAsync(id);
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"User with id = {id} cannot be found";
+                return View("NotFound");
+            }
+            else
+            {
+                var userClaims = await userManager.GetClaimsAsync(user);
+                var userRoles = await userManager.GetRolesAsync(user);
+
+                var model = new EditUserViewModel
+                {
+                    Id = user.Id,
+                    FirstName = user.FirstName,
+                    SurName = user.SurName,
+                    PhoneNumber = user.PhoneNumber,
+                    Unit = user.Unit,
+                    ExistingPhotoPath = user.PhotoPath,
+                    Email = user.Email,
+                    Gender = user.Gender,
+                    IsStillEmployee = user.IsStillEmployee,
+                    Claims = userClaims.Select(c => c.Value).ToList(),
+                    Roles = userRoles
+                };
+
+                return View(model);
+            }
+
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> EditUser(EditUserViewModel model)
+        {
+            var user = await userManager.FindByIdAsync(model.Id);
+            if (user == null)
+            {
+                ViewBag.ErrorMessage = $"User with id = {model.Id} cannot be found";
+                return View("NotFound");
+            }
+            else
+            {
+                user.Id = model.Id;
+                user.UserName = model.Email;
+                user.FirstName = model.FirstName;
+                user.SurName = model.SurName;
+                user.PhoneNumber = model.PhoneNumber;
+                user.Email = model.Email;
+                user.IsStillEmployee = model.IsStillEmployee;
+                user.Unit = model.Unit;
+                user.Gender = model.Gender;
+                user.PhotoPath = ProcessUploadedFile(model);
+
+                var result = await userManager.UpdateAsync(user);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("ListUsers");
+                }
+                else
+                {
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                    return View(model);
+                }
+            }
+        }
+
+        private string ProcessUploadedFile(RegisterViewModel? model)
+        {
+            string uniqueFilename = null;
+
+            if (model.Photo != null)
+            {
+                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
+                uniqueFilename = $"{Guid.NewGuid().ToString()}_{model.Photo.FileName}";
+                string filePath = Path.Combine(uploadsFolder, uniqueFilename);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.Photo.CopyTo(fileStream);
+                }
+            }
+
+            return uniqueFilename;
+        }
+
     }
 }
