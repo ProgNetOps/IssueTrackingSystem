@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Tracker.Entity.Contract;
+using Tracker.Entity.Enums;
 
 namespace Tracker.Entity
 {
@@ -30,8 +31,12 @@ namespace Tracker.Entity
         [Required]
         [StringLength(100)]
         public string? ClientName { get; set; }
-        
+
+
+        //public ClientCategory? ClientCategory { get; set; }
+
         public List<Circuit>? Circuits { get; set; }
+
         #endregion
     }
 

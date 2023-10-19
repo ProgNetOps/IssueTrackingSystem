@@ -43,6 +43,8 @@ namespace Tracker.Persistence
         public DbSet<MPLSPoP> MPLSPoPs { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<IPPoP> IPPoPs { get; set; }
+        public DbSet<DCNRouter> Routers { get; set; }
+        public DbSet<NetworkSwitch> Switches { get; set; }
 
     }
 }

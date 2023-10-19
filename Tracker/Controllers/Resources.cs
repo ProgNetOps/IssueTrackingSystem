@@ -5,7 +5,7 @@ namespace Tracker.Controllers
     public class Resources : Controller
     {
 
-        public IActionResult TechnicalTools()
+        public IActionResult Facilities()
         {
             ViewData["Title"] = "Technical Tools";
             return View();
@@ -13,6 +13,11 @@ namespace Tracker.Controllers
         public IActionResult AdminPanel()
         {
             ViewData["Title"] = "Administrative Panel";
+            return View();
+        }
+        public IActionResult ServiceManagementPanel()
+        {
+            ViewData["Title"] = "ServiceManagement Panel";
             return View();
         }
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dwg44/nx5MlfPv71CGDfnEgoBK0X8YSk8lsQIq+KeoI=",
+  "Hash": "ZBiDqNUcLXDgBFSdau8ppU2Vaot9qugls0ZtejvaHXk=",
   "Source": "Tracker",
   "BasePath": "_content/Tracker",
   "Mode": "Default",
@@ -236,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\0323742b-44e9-4c25-92bf-f313f6e78996_img3.jpeg"
+    },
+    {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\082308c0-07e7-4792-b49c-b2933c643d1c_lionhead.jpg",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "images/082308c0-07e7-4792-b49c-b2933c643d1c_lionhead.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\082308c0-07e7-4792-b49c-b2933c643d1c_lionhead.jpg"
     },
     {
       "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\0a4c601c-3c3c-4283-9c87-020bb6b4cede_img1.jpeg",
@@ -1513,6 +1530,23 @@
       "OriginalItemSpec": "wwwroot\\Resources\\images\\data-center.jpg"
     },
     {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\ftth-1.jpg",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "Resources/images/ftth-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\images\\ftth-1.jpg"
+    },
+    {
       "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\glo_small.ico",
       "SourceId": "Tracker",
       "SourceType": "Discovered",
@@ -1785,6 +1819,23 @@
       "OriginalItemSpec": "wwwroot\\Resources\\images\\sim-card-green.jpg"
     },
     {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\SIP.jpg",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "Resources/images/SIP.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\images\\SIP.jpg"
+    },
+    {
       "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\telecomms-radio.jpg",
       "SourceId": "Tracker",
       "SourceType": "Discovered",
@@ -1851,6 +1902,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Resources\\images\\thanks.jpg"
+    },
+    {
+      "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\WIP.png",
+      "SourceId": "Tracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\",
+      "BasePath": "_content/Tracker",
+      "RelativePath": "Resources/WIP.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\WIP.png"
     },
     {
       "Identity": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Welcome.html",

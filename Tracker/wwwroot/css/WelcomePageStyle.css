@@ -496,14 +496,15 @@ body {
 
 .card__side--back-1,
 .card__side--back-4,
-.card__side--back-7 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+.card__side--back-7,
+.card__side--back-10 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
 
 .card__side--back-2,
 .card__side--back-5,
 .card__side--back-8,
-.card__side--back-10 {
+.card__side--back-11 {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 
@@ -540,6 +541,11 @@ body {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
     url(/Resources/images/data-center.jpg);
 }
+.card__picture--10 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), 
+        url(/Resources/images/ftth-1.jpg);
+    
+}
 
 .card__picture--2 {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
@@ -555,9 +561,9 @@ body {
     url(/Resources/images/secureAPN.jpg);
 }
 
-.card__picture--10 {
+.card__picture--11 {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-    url(/Resources/images/fiberToTheHome.jpg);
+    url(/Resources/images/SIP.jpg);
 }
 
 .card__picture--3 {

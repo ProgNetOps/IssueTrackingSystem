@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Tracker.bundle.scp.css"
     },
     {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\WIP.png",
+      "PackagePath": "staticwebassets\\Resources\\WIP.png"
+    },
+    {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\forbidden.jpg",
       "PackagePath": "staticwebassets\\Resources\\forbidden.jpg"
     },
@@ -33,6 +37,10 @@
       "PackagePath": "staticwebassets\\Resources\\images\\PRI.jpg"
     },
     {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\SIP.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\SIP.jpg"
+    },
+    {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\Security.jpg",
       "PackagePath": "staticwebassets\\Resources\\images\\Security.jpg"
     },
@@ -47,6 +55,10 @@
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\data-center.jpg",
       "PackagePath": "staticwebassets\\Resources\\images\\data-center.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\ftth-1.jpg",
+      "PackagePath": "staticwebassets\\Resources\\images\\ftth-1.jpg"
     },
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\Resources\\images\\glo_small.ico",
@@ -155,6 +167,10 @@
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\0323742b-44e9-4c25-92bf-f313f6e78996_img3.jpeg",
       "PackagePath": "staticwebassets\\images\\0323742b-44e9-4c25-92bf-f313f6e78996_img3.jpeg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\082308c0-07e7-4792-b49c-b2933c643d1c_lionhead.jpg",
+      "PackagePath": "staticwebassets\\images\\082308c0-07e7-4792-b49c-b2933c643d1c_lionhead.jpg"
     },
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\0a4c601c-3c3c-4283-9c87-020bb6b4cede_img1.jpeg",

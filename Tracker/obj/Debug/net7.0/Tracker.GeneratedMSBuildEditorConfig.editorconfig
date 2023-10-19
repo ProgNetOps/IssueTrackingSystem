@@ -124,8 +124,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb3VyY2VzXEFkbWluUGFuZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Repository/IssueTrackingSystem/Tracker/Views/Resources/TechnicalTools.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb3VyY2VzXFRlY2huaWNhbFRvb2xzLmNzaHRtbA==
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Resources/Facilities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb3VyY2VzXEZhY2lsaXRpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repository/IssueTrackingSystem/Tracker/Views/Resources/ServiceManagementPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb3VyY2VzXFNlcnZpY2VNYW5hZ2VtZW50UGFuZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repository/IssueTrackingSystem/Tracker/Views/ServiceManagement/Index.cshtml]
