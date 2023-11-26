@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = Tracker.Entity
 build_property.ProjectDir = C:\Repository\IssueTrackingSystem\Tracker.Entity\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

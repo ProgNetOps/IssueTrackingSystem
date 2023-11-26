@@ -169,16 +169,12 @@
       "PackagePath": "staticwebassets\\images\\0323742b-44e9-4c25-92bf-f313f6e78996_img3.jpeg"
     },
     {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\03397bae-ed25-4e44-b41a-33304e32f2ea_img11.jpeg",
+      "PackagePath": "staticwebassets\\images\\03397bae-ed25-4e44-b41a-33304e32f2ea_img11.jpeg"
+    },
+    {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\082308c0-07e7-4792-b49c-b2933c643d1c_lionhead.jpg",
       "PackagePath": "staticwebassets\\images\\082308c0-07e7-4792-b49c-b2933c643d1c_lionhead.jpg"
-    },
-    {
-      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\0a4c601c-3c3c-4283-9c87-020bb6b4cede_img1.jpeg",
-      "PackagePath": "staticwebassets\\images\\0a4c601c-3c3c-4283-9c87-020bb6b4cede_img1.jpeg"
-    },
-    {
-      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\74ce78f1-ddb0-411c-9451-d715bd632c60_img11.jpeg",
-      "PackagePath": "staticwebassets\\images\\74ce78f1-ddb0-411c-9451-d715bd632c60_img11.jpeg"
     },
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\NoImage.jpg",
@@ -195,6 +191,10 @@
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\cb70500c-640b-4f42-91aa-dd30590fb393_Lion.jpg",
       "PackagePath": "staticwebassets\\images\\cb70500c-640b-4f42-91aa-dd30590fb393_Lion.jpg"
+    },
+    {
+      "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\d86e4434-338a-4230-adfb-91733c0e4638_img1.jpeg",
+      "PackagePath": "staticwebassets\\images\\d86e4434-338a-4230-adfb-91733c0e4638_img1.jpeg"
     },
     {
       "Id": "C:\\Repository\\IssueTrackingSystem\\Tracker\\wwwroot\\images\\e159a223-f179-4ee3-a94e-2eac7b537414_img3.jpeg",

@@ -1,3 +1,5 @@
 is_global = true
 build_property.RootNamespace = Tracker.Persistence
 build_property.ProjectDir = C:\Repository\IssueTrackingSystem\Tracker.Persistence\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

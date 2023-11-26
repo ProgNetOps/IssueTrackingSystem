@@ -445,3 +445,4 @@ C:\Repository\IssueTrackingSystem\Tracker\obj\Debug\net7.0\Tracker.genruntimecon
 C:\Repository\IssueTrackingSystem\Tracker\obj\Debug\net7.0\ref\Tracker.dll
 C:\Repository\IssueTrackingSystem\Tracker\bin\Debug\net7.0\Tracker.CustomValidations.dll
 C:\Repository\IssueTrackingSystem\Tracker\bin\Debug\net7.0\Tracker.CustomValidations.pdb
+C:\Repository\IssueTrackingSystem\Tracker\obj\Debug\net7.0\Tracker.sourcelink.json

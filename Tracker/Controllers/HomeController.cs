@@ -15,6 +15,7 @@ namespace Tracker.Controllers
             _logger = logger;
         }
 
+
         public IActionResult Index()
         {
             @ViewData["Title"] = "Home";
